@@ -347,8 +347,10 @@
   for (var i=0; i<enFlagEls.length; i++){
     enFlagEls[i].addEventListener("click", onEnFlagClick);
   }
-  
 
+  var userLang = navigator.language || navigator.userLanguage;
+  if (userLang.includes('es')) { onEsFlagClick(); }				    
+				    
 </script>
 
 </body>
