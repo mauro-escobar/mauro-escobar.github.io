@@ -36,6 +36,15 @@
       }
     }
 
+    @media screen and (max-width: 992px) {
+      body{
+        font-size: 1.5em;
+      }
+      .pub-icon-link {
+        display: none;
+      }
+    }
+    
     a:link, a:visited {
       text-decoration: none; 
       color: rgb(14, 107, 45);
@@ -84,11 +93,43 @@
       display: none;
     }
 
+    .div-bib {
+      margin-left:50px;
+      margin-right:50px;
+    }
+
+    .ta-bib{
+      background-color:rgb(0, 64, 22);
+      color: white;
+      padding-top: 5px;
+      padding-left: 5px;
+    }    
+    
+    .pre-bib{
+      line-height: 70%;
+      color: white;
+    }
+    
+    .pub-icon-image{
+      height: 14px;
+      margin-left: 3px;
+    }
+
+    button {
+      background-color: rgb(199,229,209);
+      border: none;
+      transition-duration: 0.4s;
+    }
+
+    button:hover {
+      background-color: white;
+    }
+    
   </style>
 </head>
 
 <body>
-
+<script src="js/wz_tooltip.js"></script>
 <table id="desk-head">
 <tr>
   <td><img src="images/mauro2.png" alt="Mauro" style="width:310px;border:0;margin-right:15px;"></td>
@@ -128,7 +169,7 @@
     <img src="images/mauro2.png" alt="Mauro" style="width:300px;border:0;margin-right:10px;margin-bottom:20px;"><br>
     <a target="_blank" href="https://www.polytechnique.edu/en"><img src="images/logo-EP-horizontal.png" style="width:280px;border:0;" alt="Ecole polytechnique logo"></a>
     </td>
-  <td> 
+  <td style="vertical-align:top"> 
     <table style="width:100%;">
       <tr>
 	<td>
@@ -167,11 +208,75 @@
 
 <h2><a id="h2-link" href="pdf/publications/"><span class="en-inline">Publications</span><span class="es-inline">Publicaciones</span></a></h2>  
 <ul>
-  <li>D. Bienstock, M. Escobar, C. Gentile<span class="en-inline">, and</span><span class="es-inline"> y</span> L. Liberti, <a target="_blank" href="https://doi.org/10.1007/s10288-020-00455-w"><em>Mathematical Programming formulations for the Alternating Current Optimal Power Flow problem</em></a>, <span class="en-inline">in</span><span class="es-inline">en</span> 4OR, vol. 18, no. 3, pp. 249-292, Sept. 2020. [<a target="_blank" href="https://arxiv.org/abs/2007.05334">arXiv:2007.05334</a>]</li>
-  <li>D. Bienstock <span class="en-inline">and</span><span class="es-inline">y</span> M. Escobar, <a target="_blank" href="https://doi.org/10.1109/TCNS.2019.2949908"><em>Stochastic defense against complex grid attacks</em></a>, <span class="en-inline">in</span><span class="es-inline">en</span> IEEE Transactions on Control of Network Systems, vol. 7, no. 2, pp. 842-854, Jun. 2020. [<a target="_blank" href="https://arxiv.org/abs/1807.06707">arXiv:1807.06707</a>]</li>
-  <li><span class="en-inline">PhD Thesis</span><span class="es-inline">Tesis doctoral</span>: <a target="_blank" href="https://doi.org/10.7916/d8-987s-6q56"><em>Security and Statistics on Power Grids</em></a> (2019). <span class="en-inline">Advisor</span><span class="es-inline">Profesor guía</span>: Daniel Bienstock.</li>
-  <li>M. Escobar, D. Bienstock<span class="en-inline">, and</span><span class="es-inline"> y</span> M. Chertkov, <a target="_blank" href="https://ieeexplore.ieee.org/document/8810950"><em>Learning from power system data stream</em></a>, <span class="en-inline">in</span><span class="es-inline">en</span> 2019 IEEE Milan PowerTech, Jun. 2019. [<span class="en-inline">extended version</span><span class="es-inline">version extendida</span> <a target="_blank" href="https://arxiv.org/abs/1811.07139">arXiv:1811.07139</a>]</li>
-  <li>D. Bienstock <span class="en-inline">and</span><span class="es-inline">y</span> M. Escobar, <a target="_blank" href="https://dl.acm.org/citation.cfm?doid=3152042.3152077"><em>Computing Undetectable Attacks on Power Grids</em></a>, <span class="en-inline">in</span><span class="es-inline">en</span> SIGMETRICS Performance Evaluation Review, vol. 45, no. 2, Sept. 2017.</li>
+  <li>D. Bienstock, M. Escobar, C. Gentile<span class="en-inline">, and</span><span class="es-inline"> y</span> L. Liberti, <a target="_blank" href="https://doi.org/10.1007/s10288-020-00455-w"><em>Mathematical Programming formulations for the Alternating Current Optimal Power Flow problem</em></a>, <span class="en-inline">in</span><span class="es-inline">en</span> 4OR, vol. 18, no. 3, pp. 249-292, Sept. 2020. 
+    <a class="pub-icon-link" target="_blank" href="https://doi.org/10.1007/s10288-020-00455-w" style="text-decoration:none">
+      <img class="pub-icon-image" alt="DOI logo" src="images/doi.png" onmouseover="Tip('doi:&nbsp;<strong>10.1007/s10288-020-00455-w</strong>')" onmouseout="UnTip()">
+    </a> 
+    <a class="pub-icon-link" target="_blank" href="https://arxiv.org/abs/2007.05334" style="text-decoration:none">
+      <img  class="pub-icon-image" alt="arXiv logo" src="images/arxiv.ico" onmouseover="Tip('arXiv:&nbsp;<strong>2007.05334</strong>')" onmouseout="UnTip()">
+    </a> 
+    <a class="pub-icon-link" onclick="toggle('liberti2020-acopf_survey')">
+      <img class="pub-icon-image" alt="Bibtex logo" src="images/bibtex.png" onmouseover="Tip('toggle&nbsp;Bibtex')" onmouseout="UnTip()">
+    </a>
+    <div id="liberti2020-acopf_survey" class="div-bib" style="display:none"> 
+      <button onclick="copyText('liberti2020-acopf_survey-text')">Copy citation to clipboard</button><br>
+      <textarea id="liberti2020-acopf_survey-text" class="ta-bib" readonly cols="130" rows="11">@article{liberti2020-acopf_survey,&#10;   author = {D.~Bienstock and M.~Escobar and C.~Gentile and L.~Liberti},&#10;   title = "{Mathematical programming formulations for the alternating current optimal power flow problem}",&#10;   journal = {4OR},&#10;   year = {2020},&#10;   volume = {18},&#10;   number = {3},&#10;   pages = {249-292},&#10;   doi = {10.1007/s10288-020-00455-w},&#10;   url = {https://link.springer.com/article/10.1007%2Fs10288-020-00455-w},&#10;}</textarea>
+    </div>
+  </li>
+  <li>D. Bienstock <span class="en-inline">and</span><span class="es-inline">y</span> M. Escobar, <a target="_blank" href="https://doi.org/10.1109/TCNS.2019.2949908"><em>Stochastic defense against complex grid attacks</em></a>, <span class="en-inline">in</span><span class="es-inline">en</span> IEEE Transactions on Control of Network Systems, vol. 7, no. 2, pp. 842-854, Jun. 2020.
+    <a class="pub-icon-link" target="_blank" href="https://doi.org/10.1109/TCNS.2019.2949908" style="text-decoration:none">
+      <img class="pub-icon-image" alt="DOI logo" src="images/doi.png" onmouseover="Tip('doi:&nbsp;<strong>10.1109/TCNS.2019.2949908</strong>')" onmouseout="UnTip()">
+    </a> 
+    <a class="pub-icon-link" target="_blank" href="https://arxiv.org/abs/1807.06707" style="text-decoration:none">
+      <img  class="pub-icon-image" alt="arXiv logo" src="images/arxiv.ico" onmouseover="Tip('arXiv:&nbsp;<strong>1807.06707</strong>')" onmouseout="UnTip()">
+    </a> 
+    <a class="pub-icon-link" onclick="toggle('bienstock2020-stoc_attack')">
+      <img class="pub-icon-image" alt="Bibtex logo" src="images/bibtex.png" onmouseover="Tip('toggle&nbsp;Bibtex')" onmouseout="UnTip()">
+    </a>
+    <div id="bienstock2020-stoc_attack" class="div-bib" style="display:none"> 
+      <button onclick="copyText('bienstock2020-stoc_attack-text')">Copy citation to clipboard</button><br>
+      <textarea id="bienstock2020-stoc_attack-text" class="ta-bib" readonly cols="130" rows="11">@article{bienstock2020-stoc_attack,&#10;   author = {D.~Bienstock and M.~Escobar},&#10;   title = "{Stochastic Defense Against Complex Grid Attacks}",&#10;   journal = {IEEE Transactions on Control of Network Systems},&#10;   year = {2020},&#10;   volume = {7},&#10;   number = {2},&#10;   pages = {842-854},&#10;   doi = {10.1109/TCNS.2019.2949908},&#10;   url = {https://ieeexplore.ieee.org/document/8886399},&#10;}</textarea>
+    </div>
+  </li>
+  <li><span class="en-inline">PhD Thesis</span><span class="es-inline">Tesis doctoral</span>: <a target="_blank" href="https://doi.org/10.7916/d8-987s-6q56"><em>Security and Statistics on Power Grids</em></a> (2019). <span class="en-inline">Advisor</span><span class="es-inline">Profesor guía</span>: Daniel Bienstock.
+    <a class="pub-icon-link" target="_blank" href="https://doi.org/10.7916/d8-987s-6q56" style="text-decoration:none">
+      <img class="pub-icon-image" alt="DOI logo"  src="images/doi.png" onmouseover="Tip('doi:&nbsp;<strong>10.7916/d8-987s-6q56</strong>')" onmouseout="UnTip()">
+    </a>
+    <a class="pub-icon-link" onclick="toggle('escobar2019-phdthesis')">
+      <img class="pub-icon-image" alt="Bibtex logo" src="images/bibtex.png" onmouseover="Tip('toggle&nbsp;Bibtex')" onmouseout="UnTip()">
+    </a>
+    <div id="escobar2019-phdthesis" class="div-bib" style="display:none"> 
+      <button onclick="copyText('escobar2019-phdthesis-text')">Copy citation to clipboard</button><br>
+      <textarea id="escobar2019-phdthesis-text" class="ta-bib" readonly cols="130" rows="6">@phdthesis{escobar2019-phdthesis,&#10;   author = {M.~Escobar},&#10;   title = "{Security and Statistics on Power Grids}",&#10;   school = {Columbia University},&#10;   year = {2019},&#10;}</textarea>
+    </div>
+  </li>
+  <li>M. Escobar, D. Bienstock<span class="en-inline">, and</span><span class="es-inline"> y</span> M. Chertkov, <a target="_blank" href="https://ieeexplore.ieee.org/document/8810950"><em>Learning from power system data stream</em></a>, <span class="en-inline">in</span><span class="es-inline">en</span> 2019 IEEE Milan PowerTech, Jun. 2019.
+    <a class="pub-icon-link" target="_blank" href="https://doi.org/10.1109/PTC.2019.8810950" style="text-decoration:none">
+      <img class="pub-icon-image" alt="DOI logo" src="images/doi.png" onmouseover="Tip('doi:&nbsp;<strong>10.1109/PTC.2019.8810950</strong>')" onmouseout="UnTip()">
+    </a>
+    <a class="pub-icon-link" target="_blank" href="https://arxiv.org/abs/1811.07139" style="text-decoration:none">
+      <img  class="pub-icon-image" alt="arXiv logo" src="images/arxiv.ico" onmouseover="Tip('arXiv:&nbsp;<strong>1811.07139</strong>')" onmouseout="UnTip()">
+    </a> 
+    <a class="pub-icon-link" onclick="toggle('escobar2019-data_stream')">
+      <img class="pub-icon-image" alt="Bibtex logo" src="images/bibtex.png" onmouseover="Tip('toggle&nbsp;Bibtex')" onmouseout="UnTip()">
+    </a>
+    <div id="escobar2019-data_stream" class="div-bib" style="display:none"> 
+      <button onclick="copyText('escobar2019-data_stream-text')">Copy citation to clipboard</button><br>
+      <textarea id="escobar2019-data_stream-text" class="ta-bib" readonly cols="130" rows="9">@inproceedings{escobar2019-data_stream,&#10;   author = {M.~Escobar and D.~Bienstock and M.~Chertkov},&#10;   title = "{Learning from power system data stream}",&#10;   booktitle = {2019 IEEE Milan PowerTech},&#10;   year = {2019},&#10;   pages = {1-6},&#10;   doi = {10.1109/PTC.2019.8810950},&#10;   url = {https://ieeexplore.ieee.org/document/8810950},&#10;}</textarea>
+    </div>
+  </li>
+  <li>D. Bienstock <span class="en-inline">and</span><span class="es-inline">y</span> M. Escobar, <a target="_blank" href="https://dl.acm.org/citation.cfm?doid=3152042.3152077"><em>Computing Undetectable Attacks on Power Grids</em></a>, <span class="en-inline">in</span><span class="es-inline">en</span> SIGMETRICS Performance Evaluation Review, vol. 45, no. 2, Sept. 2017.
+    <a class="pub-icon-link" target="_blank" href="https://doi.org/10.1145/3152042.3152077" style="text-decoration:none">
+      <img class="pub-icon-image" alt="DOI logo" src="images/doi.png" onmouseover="Tip('doi:&nbsp;<strong>10.1145/3152042.3152077</strong>')" onmouseout="UnTip()">
+    </a>
+    <a class="pub-icon-link" onclick="toggle('bienstock2017-computing_undetectable')">
+      <img class="pub-icon-image" alt="Bibtex logo" src="images/bibtex.png" onmouseover="Tip('toggle&nbsp;Bibtex')" onmouseout="UnTip()">
+    </a>
+    <div id="bienstock2017-computing_undetectable" class="div-bib" style="display:none"> 
+      <button onclick="copyText('bienstock2017-computing_undetectable-text')">Copy citation to clipboard</button><br>
+      <textarea id="bienstock2017-computing_undetectable-text" class="ta-bib" readonly cols="130" rows="11">@article{bienstock2017-computing_undetectable,&#10;   author = {D.~Bienstock and M.~Escobar},&#10;   title = "{Computing Undetectable Attacks on Power Grids}",&#10;   publisher = {Association for Computing Machinery},&#10;   year = {2017},&#10;   volume = {45},&#10;   number = {2},&#10;   pages = {115-118},&#10;   doi = {10.1145/3152042.3152077},&#10;   url = {https://doi.org/10.1145/3152042.3152077},&#10;}</textarea>
+    </div>
+  </li>
   <li><span class="en-inline">M.S. Thesis (in Spanish)</span><span class="es-inline">Tesis de pregrado</span>: <a target="_blank" href="http://repositorio.uchile.cl/handle/2250/112309"><em>Analysis of Network Coding Algorithms</em></a> (2012).
 <span class="en-inline">Advisor</span><span class="es-inline">Profesor guía</span>: <a target="_blank" href="http://www.dim.uchile.cl/~mkiwi/">Marcos Kiwi</a>. </li>
 </ul>
@@ -348,6 +453,31 @@
 
   var userLang = navigator.language || navigator.userLanguage;
   if (userLang.includes('es')) { onEsFlagClick(); }				    
+
+  function toggle(obj){
+    var el = document.getElementById(obj);
+    if ( el.style.display != 'none' ) {
+        el.style.display = 'none';
+    }
+    else {
+        el.style.display = 'block';
+    }
+  }
+
+  function copyText(obj) {
+    var el = document.getElementById(obj);
+    el.select();			    
+    document.execCommand("copy");
+    Tip("Citation&nbsp;copied!");			    
+    setTimeout(UnTip, 2000);
+    clearSelection();
+  }
+
+  function clearSelection() {
+    if (window.getSelection) {window.getSelection().removeAllRanges();}
+    else if (document.selection) {document.selection.empty();}
+  }
+
 				    
 </script>
 
