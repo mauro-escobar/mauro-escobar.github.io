@@ -44,7 +44,8 @@
         display: none;
       }
     }
-    
+
+   
     a:link, a:visited {
       text-decoration: none; 
       color: rgb(14, 107, 45);
@@ -124,7 +125,36 @@
     button:hover {
       background-color: white;
     }
-    
+
+    #link-bar {
+      margin-top: 10px;
+      overflow: hidden;
+      background-color: rgb(0, 64, 22);
+      text-align: right;
+      color: white;
+      font-weight: bold;
+      padding-top: 2px;
+      padding-bottom: 2px;
+
+    }    
+
+    #link-bar a {
+      padding: 15px 15px;
+      color: white;
+      font-weight: bold;
+    }
+
+    #link-bar a:hover {
+      background-color: rgb(199, 229, 209);
+      color: black;
+      text-decoration: none; 
+    }
+
+    #link-bar img {
+      margin-top: 2px;
+      height: 1em;
+    }
+   
   </style>
 </head>
 
@@ -134,12 +164,7 @@
 <tr>
   <td><img src="images/mauro2.png" alt="Mauro" style="width:310px;border:0;margin-right:15px;"></td>
   <td> 
-    <h1> Mauro Escobar 
-      <a content="https://orcid.org/0000-0001-8608-824X" href="https://orcid.org/0000-0001-8608-824X" target="orcid.widget" rel="me noopener noreferrer" title="ORCiD"><img class="tiny-links"  style="margin-top:2px" src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID"></a>
-      <a content="https://scholar.google.com/citations?user=FrSICTkAAAAJ" href="https://scholar.google.com/citations?user=FrSICTkAAAAJ" target="_blank" rel="me noopener noreferrer" title="Google Scholar"><img class="tiny-links" style="margin-top:2px" src="https://scholar.google.com/intl/en/scholar/images/1x/scholar16-tb.png" alt="Google Scholar"></a>
-      <a content="https://www.linkedin.com/in/mauro-escobar/?locale=en_US" href="https://www.linkedin.com/in/mauro-escobar/?locale=en_US" target="_blank" rel="me noopener noreferrer" title="LinkedIn"><img class="tiny-links" src="https://media-exp1.licdn.com/dms/image/C4E0BAQGBBp0LaObq0A/company-logo_200_200/0?e=2159024400&v=beta&t=tyrD06lDsdOelMjanHDd2gC1iqekh_JWTaXny9bAT4o" style="vertical-align:top;width:.6em;" alt="LinkedIn"></a>
-      <a content="https://github.com/me2533" href="https://github.com/me2533" target="_blank" rel="me noopener noreferrer" title="GitHub"><img class="tiny-links" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" style="vertical-align:top;width:.6em;" alt="GitHub"></a>
-    </h1>
+    <h1>Mauro Escobar</h1>
     <p class="head1"></p>
     
     <p class="head2"></p>
@@ -173,12 +198,7 @@
     <table style="width:100%;">
       <tr>
 	<td>
-	  <h1> Mauro Escobar 
-	    <a content="https://orcid.org/0000-0001-8608-824X" href="https://orcid.org/0000-0001-8608-824X" target="orcid.widget" rel="me noopener noreferrer" title="ORCiD"><img class="tiny-links" style="margin-top:2px" src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID iD icon"></a>
-	    <a content="https://scholar.google.com/citations?user=FrSICTkAAAAJ" href="https://scholar.google.com/citations?user=FrSICTkAAAAJ" target="_blank" rel="me noopener noreferrer" title="Google Scholar"><img class="tiny-links" style="margin-top:2px" src="https://scholar.google.com/intl/en/scholar/images/1x/scholar16-tb.png" alt="Google Scholar"></a>
-	    <a content="https://www.linkedin.com/in/mauro-escobar/?locale=en_US" href="https://www.linkedin.com/in/mauro-escobar/?locale=en_US" target="_blank" rel="me noopener noreferrer" title="LinkedIn"><img class="tiny-links" src="https://media-exp1.licdn.com/dms/image/C4E0BAQGBBp0LaObq0A/company-logo_200_200/0?e=2159024400&v=beta&t=tyrD06lDsdOelMjanHDd2gC1iqekh_JWTaXny9bAT4o" style="width:.6em;" alt="LinkedIn"></a>
-	    <a content="https://github.com/me2533" href="https://github.com/me2533" target="_blank" rel="me noopener noreferrer" title="GitHub"><img class="tiny-links" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" style="vertical-align:top;width:.6em;" alt="GitHub"></a>
-	  </h1>
+	  <h1>Mauro Escobar</h1>
 	</td>
 	<td style="vertical-align:top;text-align:right;">
 	  <i class="spain flag es-flag"></i>
@@ -196,9 +216,10 @@
 </table>
 <p class="head4 mobile-head"></p>
 
+<div id="link-bar">|<a content="https://orcid.org/0000-0001-8608-824X" href="https://orcid.org/0000-0001-8608-824X" target="orcid.widget" title="ORCiD">ORCiD <img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID"></a>|<a content="https://scholar.google.com/citations?user=FrSICTkAAAAJ" href="https://scholar.google.com/citations?user=FrSICTkAAAAJ" target="_blank" rel="me noopener noreferrer" title="Google Scholar">Google Scholar <img src="https://scholar.google.com/intl/en/scholar/images/1x/scholar16-tb.png" alt="Google Scholar"></a>|<a content="https://www.linkedin.com/in/mauro-escobar/?locale=en_US" href="https://www.linkedin.com/in/mauro-escobar/?locale=en_US" target="_blank" rel="me noopener noreferrer" title="LinkedIn">LinkedIn <img src="images/linkedin-logo.png" alt="LinkedIn"></a>|<a id="test" content="https://github.com/me2533" href="https://github.com/me2533" target="_blank" title="GitHub" onmouseover="hovergithub(this)" onmouseout="unhovergithub(this)">GitHub <img src="images/GitHub-Mark-Light-32px.png" alt="GitHub"></a>
+</div>
 
 
-<hr>
 <h2><span class="en-inline">Research</span><span class="es-inline">Investigación</span></h2>
 
 <p class="english"> I am interested in Mathematical Optimization, in particular, Stochastic Programming, Linear Programming, Combinatorial and Discrete Optimization, Convex Optimization, and Semidefinite Programming. I also have a broad interest  Discrete Mathematics and Computational Complexity Theory.</p>
@@ -477,7 +498,14 @@
     if (window.getSelection) {window.getSelection().removeAllRanges();}
     else if (document.selection) {document.selection.empty();}
   }
-
+ 
+  function hovergithub(el) {
+    el.innerHTML = "GitHub <img src=\"images/GitHub-Mark-32px.png\" style=\"height:1em;margin-top:2px\" alt=\"GitHub\">"
+  }
+				    
+  function unhovergithub(el) {
+    el.innerHTML = "GitHub <img src=\"images/GitHub-Mark-Light-32px.png\" style=\"height:1em;margin-top:2px;\" alt=\"GitHub\">"
+  }
 				    
 </script>
 
