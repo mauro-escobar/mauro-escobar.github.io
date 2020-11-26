@@ -268,7 +268,7 @@
     </a>
     <div id="escobar2019-phdthesis" class="div-bib" style="display:none"> 
       <button onclick="copyText('escobar2019-phdthesis-text')">Copy citation to clipboard</button><br>
-      <textarea id="escobar2019-phdthesis-text" class="ta-bib" readonly cols="130" rows="6">@phdthesis{escobar2019-phdthesis,&#10;   author = {M.~Escobar},&#10;   title = "{Security and Statistics on Power Grids}",&#10;   school = {Columbia University},&#10;   year = {2019},&#10;}</textarea>
+      <textarea id="escobar2019-phdthesis-text" class="ta-bib" readonly cols="130" rows="7">@phdthesis{escobar2019-phdthesis,&#10;   author = {M.~Escobar},&#10;   title = "{Security and Statistics on Power Grids}",&#10;   school = {Columbia University},&#10;   year = {2019},&#10;   url = {https://doi.org/10.7916/d8-987s-6q56},&#10;}</textarea>
     </div>
   </li>
   <li>M. Escobar, D. Bienstock<span class="en-inline">, and</span><span class="es-inline"> y</span> M. Chertkov, <a target="_blank" href="https://ieeexplore.ieee.org/document/8810950"><em>Learning from power system data stream</em></a>, <span class="en-inline">in</span><span class="es-inline">en</span> 2019 IEEE Milan PowerTech, Jun. 2019.
@@ -299,7 +299,15 @@
     </div>
   </li>
   <li><span class="en-inline">M.S. Thesis (in Spanish)</span><span class="es-inline">Tesis de pregrado</span>: <a target="_blank" href="http://repositorio.uchile.cl/handle/2250/112309"><em>Analysis of Network Coding Algorithms</em></a> (2012).
-<span class="en-inline">Advisor</span><span class="es-inline">Profesor guía</span>: <a target="_blank" href="http://www.dim.uchile.cl/~mkiwi/">Marcos Kiwi</a>. </li>
+    <span class="en-inline">Advisor</span><span class="es-inline">Profesor guía</span>: <a target="_blank" href="http://www.dim.uchile.cl/~mkiwi/">Marcos Kiwi</a>.
+    <a class="pub-icon-link" onclick="toggle('escobar2012-mastersthesis')">
+      <img class="pub-icon-image" alt="Bibtex logo" src="images/bibtex.png" onmouseover="Tip('toggle&nbsp;Bibtex')" onmouseout="UnTip()">
+    </a>
+    <div id="escobar2012-mastersthesis" class="div-bib" style="display:none"> 
+      <button onclick="copyText('escobar2012-mastersthesis-text')">Copy citation to clipboard</button><br>
+      <textarea id="escobar2012-mastersthesis-text" class="ta-bib" readonly cols="130" rows="7">@mastersthesis{escobar2012-mastersthesis,&#10;   author = {M.~Escobar},&#10;   title = "{An\'aisis de algoritmos de codificaci\'on de redes}",&#10;   school = {Universidad de Chile - Facultad de Ciencias F\'isicas y Matem\'aticas},&#10;   year = {2012},&#10;   url = {http://repositorio.uchile.cl/handle/2250/112309},&#10;}</textarea>
+    </div>
+  </li>
 </ul>
 
 <h2><span class="en-inline">Talks</span><span class="es-inline">Charlas</span></h2>  
@@ -314,7 +322,7 @@
 	  <a target="_blank" href="http://meetings2.informs.org/wordpress/phoenix2018/">2018 INFORMS Annual Meeting</a>, Phoenix, AZ.</li>
   <li>"<em>Cyber-Physical Attacks on Power Grids under the AC model and Stochastic Defense</em>." 
 	  <a target="_blank" href="https://www.siam.org/conferences/cm/conference/ns18">SIAM - Network Science 2018</a>, Portland, OR.
-	  [<a target="_blank" href="pdf/siamns18_abstract.pdf">extended abstract</a>]</li>
+	  [<a target="_blank" href="pdf/siamns18_abstract.pdf"><span class="en-inline">extended abstract</span><span class="es-inline">abstract extendido</span></a>]</li>
   <li>"<em>Undetectable Cyber-Physical Attacks on Power Grids under the AC model</em>." 
 	  <a target="_blank" href="http://euro2018valencia.com/">EURO 2018</a>, Valencia, Spain.</li>
   <li><em>"Machine Learning with PMU signals</em>." 
@@ -323,7 +331,7 @@
 	  <a target="_blank" href="http://meetings2.informs.org/wordpress/houston2017/">2017 INFORMS Annual Meeting</a>, Houston, TX.</li>
   <li>"<em>On Routing Policies for Synchronized Queues</em>." 
 	  <a target="_blank" href="http://meetings2.informs.org/wordpress/philadelphia/">2015 INFORMS Annual Meeting</a>, Philadelphia, PA. 
-	  [<a target="_blank" href="pdf/informs2015_presentation.pdf">slides</a>]</li>
+	  [<a target="_blank" href="pdf/informs2015_presentation.pdf"><span class="en-inline">slides</span><span class="es-inline">diapositivas</span></a>]</li>
 </ul>
 
 <h2><span class="en-inline">Code</span><span class="es-inline">Códigos</span></h2>  
@@ -351,14 +359,14 @@
   ga('create', 'UA-85686319-1', 'auto');
   ga('send', 'pageview');
 
-  var head1TextEn = "Postdoc at <a href=\"https://www.lix.polytechnique.fr/\">LIX</a>, <a href=\"https://www.polytechnique.edu/en\">Ecole polytechnique</a>, Paris.";
-  var head1TextEs = "Postdoc en <a href=\"https://www.lix.polytechnique.fr/\">LIX</a>, <a href=\"https://www.polytechnique.edu/en\">Ecole polytechnique</a>, París.";
+  var head1TextEn = "Postdoc at <a href=\"https://www.lix.polytechnique.fr/\" onmouseover=\"Tip('Laboratoire&nbsp;d&rsquo;informatique&nbsp;de&nbsp;l&rsquo;École&nbsp;polytechnique')\" onmouseout=\"UnTip()\">LIX</a> (in the <a href=\"https://www.lix.polytechnique.fr/team/10/view\" onmouseover=\"Tip('Data&nbsp;Science&nbsp;and&nbsp;Mining')\" onmouseout=\"UnTip()\">DaSciM</a> team), <a href=\"https://www.polytechnique.edu/en\">École polytechnique</a>, Paris.";
+  var head1TextEs = "Postdoc en <a href=\"https://www.lix.polytechnique.fr/\" onmouseover=\"Tip('Laboratoire&nbsp;d&rsquo;informatique&nbsp;de&nbsp;l&rsquo;École&nbsp;polytechnique')\" onmouseout=\"UnTip()\">LIX</a> (en el equipo <a href=\"https://www.lix.polytechnique.fr/team/10/view\" onmouseover=\"Tip('Data&nbsp;Science&nbsp;and&nbsp;Mining')\" onmouseout=\"UnTip()\">DaSciM</a>), <a href=\"https://www.polytechnique.edu/en\">École polytechnique</a>, París.";
 
   var head2TextEn = "PhD in Operations Research, 2019<br><a target=\"_blank\" href=\"http://ieor.columbia.edu\">Industrial Engineering & Operations Research Department</a><br><a target=\"_blank\" href=\"http://www.columbia.edu\">Columbia University</a>";
   var head2TextEs = "Doctor en Investigación de Operaciones, 2019<br>Departamento de <a target=\"_blank\" href=\"http://ieor.columbia.edu\">Ingeniería Industrial e Investigación de Operaciones</a><br><a target=\"_blank\" href=\"http://www.columbia.edu\">Columbia University</a>";
 
-  var head3TextEn = "<strong>Background:</strong> In 2012 I obtained a B.S. in Engineering and in 2013 a M.S. in <a target=\"_blank\" href=\"http://www.dim.uchile.cl\">Applied Math</A>, from <a target=\"_blank\" href=\"http://www.uchile.cl\">Universidad de Chile</A>. In 2019 I obtained my PhD in Operations Research at Columbia University, my advisor was <a target=\"_blank\" href=\"https://www.engineering.columbia.edu/faculty/daniel-bienstock\">Daniel Bienstock</a>. I am currently a postdoc at <a target=\"_blank\" href=\"https://www.lix.polytechnique.fr/\">LIX</a> at <a target=\"_blank\" href=\"https://www.polytechnique.edu/en\">Ecole polytechnique</a>, working with <a target=\"_blank\" href=\"http://www.lix.polytechnique.fr/Labo/Leo.Liberti/\">Leo Liberti</a>, <a target=\"_blank\" href=\"https://www.lix.polytechnique.fr/~dambrosio/\">Claudia D'Ambrosio</a>, and <a target=\"_blank\" href=\"http://samm.univ-paris1.fr/Sonia-Vanier\">Sonia Vanier</a>.";
-  var head3TextEs = "<strong>Background:</strong> En el 2013 obtuve el grado de <a target=\"_blank\" href=\"http://www.dim.uchile.cl\">Ingeniero Civil Matemático</A> de la <a target=\"_blank\" href=\"http://www.uchile.cl\">Universidad de Chile</A>. En el 2019 me gradué como doctor en Investigación de Operaciones de la Universidad de Columbia (N.Y.), con la supervisión del profesor <a target=\"_blank\" href=\"https://www.engineering.columbia.edu/faculty/daniel-bienstock\">Daniel Bienstock</a>. Actualmente, realizo un postdoctorado en <a target=\"_blank\" href=\"https://www.lix.polytechnique.fr/\">LIX</a> (<a target=\"_blank\" href=\"https://www.polytechnique.edu/en\">Ecole polytechnique</a>), trabajando con <a target=\"_blank\" href=\"http://www.lix.polytechnique.fr/Labo/Leo.Liberti/\">Leo Liberti</a>, <a target=\"_blank\" href=\"https://www.lix.polytechnique.fr/~dambrosio/\">Claudia D'Ambrosio</a> y <a target=\"_blank\" href=\"http://samm.univ-paris1.fr/Sonia-Vanier\">Sonia Vanier</a>.";
+  var head3TextEn = "<strong>Background:</strong> In 2012 I obtained a B.S. in Engineering and in 2013 a M.S. in <a target=\"_blank\" href=\"http://www.dim.uchile.cl\">Applied Math</A>, from <a target=\"_blank\" href=\"http://www.uchile.cl\">Universidad de Chile</A>. In 2019 I obtained my PhD in Operations Research at Columbia University, my advisor was <a target=\"_blank\" href=\"https://www.engineering.columbia.edu/faculty/daniel-bienstock\">Daniel Bienstock</a>. I am currently a postdoc at <a target=\"_blank\" href=\"https://www.lix.polytechnique.fr/\">LIX</a> at <a target=\"_blank\" href=\"https://www.polytechnique.edu/en\">École polytechnique</a>, working with <a target=\"_blank\" href=\"http://www.lix.polytechnique.fr/Labo/Leo.Liberti/\">Leo Liberti</a>, <a target=\"_blank\" href=\"https://www.lix.polytechnique.fr/~dambrosio/\">Claudia D'Ambrosio</a>, and <a target=\"_blank\" href=\"http://samm.univ-paris1.fr/Sonia-Vanier\">Sonia Vanier</a>.";
+  var head3TextEs = "<strong>Background:</strong> En el 2013 obtuve el grado de <a target=\"_blank\" href=\"http://www.dim.uchile.cl\">Ingeniero Civil Matemático</A> de la <a target=\"_blank\" href=\"http://www.uchile.cl\">Universidad de Chile</A>. En el 2019 me gradué como doctor en Investigación de Operaciones de la Universidad de Columbia (N.Y.), con la supervisión del profesor <a target=\"_blank\" href=\"https://www.engineering.columbia.edu/faculty/daniel-bienstock\">Daniel Bienstock</a>. Actualmente, realizo un postdoctorado en <a target=\"_blank\" href=\"https://www.lix.polytechnique.fr/\">LIX</a> (<a target=\"_blank\" href=\"https://www.polytechnique.edu/en\">École polytechnique</a>), trabajando con <a target=\"_blank\" href=\"http://www.lix.polytechnique.fr/Labo/Leo.Liberti/\">Leo Liberti</a>, <a target=\"_blank\" href=\"https://www.lix.polytechnique.fr/~dambrosio/\">Claudia D'Ambrosio</a> y <a target=\"_blank\" href=\"http://samm.univ-paris1.fr/Sonia-Vanier\">Sonia Vanier</a>.";
 
   var head4TextEn = "Email: <span class=\"tt\">escobar</span>-at-<span class=\"tt\">lix</span>-dot-<span class=\"tt\">polytechnique</span>-dot-<span class=\"tt\">fr</span>";
   var head4TextEs = "Email: <span class=\"tt\">escobar</span>-arroba-<span class=\"tt\">lix</span>-punto-<span class=\"tt\">polytechnique</span>-punto-<span class=\"tt\">fr</span>";
