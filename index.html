@@ -147,6 +147,7 @@
       padding: 15px 15px;
       color: white;
       font-weight: bold;
+      transition-duration: 0.4s;
     }
 
     #link-bar a:hover {
@@ -164,6 +165,7 @@
       width: 120px;
       filter: blur(0.5px) opacity(70%);
       border: 1px solid rgb(0, 64, 22);
+      transition-duration: 0.4s;
     }
 
     #cv-image:hover {
@@ -244,7 +246,7 @@
 <p class="spanish"> Tengo un amplio interés en la Optimización, en particular, Optimización Estocástica, Programación Lineal, Combinatorial, Optimización Discreta, Optimización Convexa y Programación Semidefinida. También tengo interés en las Matemáticas Discretas y en la Teoría de la Complejidad Computacional.</p>
 <p class="spanish"> Durante mi doctorado, trabajé en mecanismos de defensa frente a ataques físicos y cibernéticos a redes eléctricas. </p>
 
-<h2><a id="h2-link" href="pdf/publications/"><span class="en-inline">Publications</span><span class="es-inline">Publicaciones</span></a></h2>  
+<h2><span class="en-inline">Publications</span><span class="es-inline">Publicaciones</span></h2>  
 <ul>
   <li>D. Bienstock, M. Escobar, C. Gentile<span class="en-inline">, and</span><span class="es-inline"> y</span> L. Liberti, <a target="_blank" href="https://doi.org/10.1007/s10288-020-00455-w"><em>Mathematical Programming formulations for the Alternating Current Optimal Power Flow problem</em></a>, <span class="en-inline">in</span><span class="es-inline">en</span> 4OR, vol. 18, no. 3, pp. 249-292, Sept. 2020.
     <a class="pub-icon-link" target="_blank" href="https://link.springer.com/article/10.1007%2Fs10288-020-00455-w" style="text-decoration:none">
@@ -257,10 +259,11 @@
       <i class="ai ai-arxiv" onmouseover="Tip('arXiv:&nbsp;<strong>2007.05334</strong>')" onmouseout="UnTip()"></i>
     </a> 
     <a class="pub-icon-link" onclick="toggle('liberti2020-acopf_survey')">
-      <img class="pub-icon-image" alt="Bibtex logo" src="images/bibtex.png" onmouseover="Tip('toggle&nbsp;Bibtex')" onmouseout="UnTip()">
+      <img class="pub-icon-image en-inline" alt="Bibtex logo" src="images/bibtex.png" onmouseover="Tip('toggle&nbsp;Bibtex')" onmouseout="UnTip()">
+      <img class="pub-icon-image es-inline" alt="Bibtex logo" src="images/bibtex.png" onmouseover="Tip('mostrar&nbsp;Bibtex')" onmouseout="UnTip()">
     </a>
     <div id="liberti2020-acopf_survey" class="div-bib" style="display:none"> 
-      <button onclick="copyText('liberti2020-acopf_survey-text')">Copy citation to clipboard</button><br>
+      <button class="copy-button" onclick="copyText('liberti2020-acopf_survey-text')">Copy citation to clipboard</button><br>
       <textarea id="liberti2020-acopf_survey-text" class="ta-bib" readonly cols="130" rows="11">@article{liberti2020-acopf_survey,&#10;   author = {D.~Bienstock and M.~Escobar and C.~Gentile and L.~Liberti},&#10;   title = "{Mathematical programming formulations for the alternating current optimal power flow problem}",&#10;   journal = {4OR},&#10;   year = {2020},&#10;   volume = {18},&#10;   number = {3},&#10;   pages = {249-292},&#10;   doi = {10.1007/s10288-020-00455-w},&#10;   url = {https://link.springer.com/article/10.1007%2Fs10288-020-00455-w},&#10;}</textarea>
     </div>
   </li>
@@ -275,10 +278,11 @@
       <i class="ai ai-arxiv" onmouseover="Tip('arXiv:&nbsp;<strong>1807.06707</strong>')" onmouseout="UnTip()"></i>
     </a> 
     <a class="pub-icon-link" onclick="toggle('bienstock2020-stoc_attack')">
-      <img class="pub-icon-image" alt="Bibtex logo" src="images/bibtex.png" onmouseover="Tip('toggle&nbsp;Bibtex')" onmouseout="UnTip()">
+      <img class="pub-icon-image en-inline" alt="Bibtex logo" src="images/bibtex.png" onmouseover="Tip('toggle&nbsp;Bibtex')" onmouseout="UnTip()">
+      <img class="pub-icon-image es-inline" alt="Bibtex logo" src="images/bibtex.png" onmouseover="Tip('mostrar&nbsp;Bibtex')" onmouseout="UnTip()">
     </a>
     <div id="bienstock2020-stoc_attack" class="div-bib" style="display:none"> 
-      <button onclick="copyText('bienstock2020-stoc_attack-text')">Copy citation to clipboard</button><br>
+      <button class="copy-button" onclick="copyText('bienstock2020-stoc_attack-text')">Copy citation to clipboard</button><br>
       <textarea id="bienstock2020-stoc_attack-text" class="ta-bib" readonly cols="130" rows="11">@article{bienstock2020-stoc_attack,&#10;   author = {D.~Bienstock and M.~Escobar},&#10;   title = "{Stochastic Defense Against Complex Grid Attacks}",&#10;   journal = {IEEE Transactions on Control of Network Systems},&#10;   year = {2020},&#10;   volume = {7},&#10;   number = {2},&#10;   pages = {842-854},&#10;   doi = {10.1109/TCNS.2019.2949908},&#10;   url = {https://ieeexplore.ieee.org/document/8886399},&#10;}</textarea>
     </div>
   </li>
@@ -287,10 +291,11 @@
       <i class="ai ai-doi" onmouseover="Tip('doi:&nbsp;<strong>10.7916/d8-987s-6q56</strong>')" onmouseout="UnTip()"></i>
     </a>
     <a class="pub-icon-link" onclick="toggle('escobar2019-phdthesis')">
-      <img class="pub-icon-image" alt="Bibtex logo" src="images/bibtex.png" onmouseover="Tip('toggle&nbsp;Bibtex')" onmouseout="UnTip()">
+      <img class="pub-icon-image en-inline" alt="Bibtex logo" src="images/bibtex.png" onmouseover="Tip('toggle&nbsp;Bibtex')" onmouseout="UnTip()">
+      <img class="pub-icon-image es-inline" alt="Bibtex logo" src="images/bibtex.png" onmouseover="Tip('mostrar&nbsp;Bibtex')" onmouseout="UnTip()">
     </a>
     <div id="escobar2019-phdthesis" class="div-bib" style="display:none"> 
-      <button onclick="copyText('escobar2019-phdthesis-text')">Copy citation to clipboard</button><br>
+      <button class="copy-button" onclick="copyText('escobar2019-phdthesis-text')">Copy citation to clipboard</button><br>
       <textarea id="escobar2019-phdthesis-text" class="ta-bib" readonly cols="130" rows="7">@phdthesis{escobar2019-phdthesis,&#10;   author = {M.~Escobar},&#10;   title = "{Security and Statistics on Power Grids}",&#10;   school = {Columbia University},&#10;   year = {2019},&#10;   url = {https://doi.org/10.7916/d8-987s-6q56},&#10;}</textarea>
     </div>
   </li>
@@ -305,10 +310,11 @@
       <i class="ai ai-arxiv" onmouseover="Tip('arXiv:&nbsp;<strong>1811.07139</strong>')" onmouseout="UnTip()"></i>
     </a> 
     <a class="pub-icon-link" onclick="toggle('escobar2019-data_stream')">
-      <img class="pub-icon-image" alt="Bibtex logo" src="images/bibtex.png" onmouseover="Tip('toggle&nbsp;Bibtex')" onmouseout="UnTip()">
+      <img class="pub-icon-image en-inline" alt="Bibtex logo" src="images/bibtex.png" onmouseover="Tip('toggle&nbsp;Bibtex')" onmouseout="UnTip()">
+      <img class="pub-icon-image es-inline" alt="Bibtex logo" src="images/bibtex.png" onmouseover="Tip('mostrar&nbsp;Bibtex')" onmouseout="UnTip()">
     </a>
     <div id="escobar2019-data_stream" class="div-bib" style="display:none"> 
-      <button onclick="copyText('escobar2019-data_stream-text')">Copy citation to clipboard</button><br>
+      <button class="copy-button" onclick="copyText('escobar2019-data_stream-text')">Copy citation to clipboard</button><br>
       <textarea id="escobar2019-data_stream-text" class="ta-bib" readonly cols="130" rows="9">@inproceedings{escobar2019-data_stream,&#10;   author = {M.~Escobar and D.~Bienstock and M.~Chertkov},&#10;   title = "{Learning from power system data stream}",&#10;   booktitle = {2019 IEEE Milan PowerTech},&#10;   year = {2019},&#10;   pages = {1-6},&#10;   doi = {10.1109/PTC.2019.8810950},&#10;   url = {https://ieeexplore.ieee.org/document/8810950},&#10;}</textarea>
     </div>
   </li>
@@ -320,20 +326,22 @@
       <i class="ai ai-doi" onmouseover="Tip('doi:&nbsp;<strong>10.1145/3152042.3152077</strong>')" onmouseout="UnTip()"></i>
     </a>
     <a class="pub-icon-link" onclick="toggle('bienstock2017-computing_undetectable')">
-      <img class="pub-icon-image" alt="Bibtex logo" src="images/bibtex.png" onmouseover="Tip('toggle&nbsp;Bibtex')" onmouseout="UnTip()">
+      <img class="pub-icon-image en-inline" alt="Bibtex logo" src="images/bibtex.png" onmouseover="Tip('toggle&nbsp;Bibtex')" onmouseout="UnTip()">
+      <img class="pub-icon-image es-inline" alt="Bibtex logo" src="images/bibtex.png" onmouseover="Tip('mostrar&nbsp;Bibtex')" onmouseout="UnTip()">
     </a>
     <div id="bienstock2017-computing_undetectable" class="div-bib" style="display:none"> 
-      <button onclick="copyText('bienstock2017-computing_undetectable-text')">Copy citation to clipboard</button><br>
+      <button class="copy-button" onclick="copyText('bienstock2017-computing_undetectable-text')">Copy citation to clipboard</button><br>
       <textarea id="bienstock2017-computing_undetectable-text" class="ta-bib" readonly cols="130" rows="11">@article{bienstock2017-computing_undetectable,&#10;   author = {D.~Bienstock and M.~Escobar},&#10;   title = "{Computing Undetectable Attacks on Power Grids}",&#10;   publisher = {Association for Computing Machinery},&#10;   year = {2017},&#10;   volume = {45},&#10;   number = {2},&#10;   pages = {115-118},&#10;   doi = {10.1145/3152042.3152077},&#10;   url = {https://doi.org/10.1145/3152042.3152077},&#10;}</textarea>
     </div>
   </li>
   <li><span class="en-inline">M.S. Thesis (in Spanish)</span><span class="es-inline">Tesis de pregrado</span>: <a target="_blank" href="http://repositorio.uchile.cl/handle/2250/112309"><em>Analysis of Network Coding Algorithms</em></a> (2012).
     <span class="en-inline">Advisor</span><span class="es-inline">Profesor guía</span>: <a target="_blank" href="http://www.dim.uchile.cl/~mkiwi/">Marcos Kiwi</a>.
     <a class="pub-icon-link" onclick="toggle('escobar2012-mastersthesis')">
-      <img class="pub-icon-image" alt="Bibtex logo" src="images/bibtex.png" onmouseover="Tip('toggle&nbsp;Bibtex')" onmouseout="UnTip()">
+      <img class="pub-icon-image en-inline" alt="Bibtex logo" src="images/bibtex.png" onmouseover="Tip('toggle&nbsp;Bibtex')" onmouseout="UnTip()">
+      <img class="pub-icon-image es-inline" alt="Bibtex logo" src="images/bibtex.png" onmouseover="Tip('mostrar&nbsp;Bibtex')" onmouseout="UnTip()">
     </a>
     <div id="escobar2012-mastersthesis" class="div-bib" style="display:none"> 
-      <button onclick="copyText('escobar2012-mastersthesis-text')">Copy citation to clipboard</button><br>
+      <button class="copy-button" onclick="copyText('escobar2012-mastersthesis-text')">Copy citation to clipboard</button><br>
       <textarea id="escobar2012-mastersthesis-text" class="ta-bib" readonly cols="130" rows="7">@mastersthesis{escobar2012-mastersthesis,&#10;   author = {M.~Escobar},&#10;   title = "{An\'alisis de algoritmos de codificaci\'on de redes}",&#10;   school = {Universidad de Chile - Facultad de Ciencias F\'isicas y Matem\'aticas},&#10;   year = {2012},&#10;   url = {http://repositorio.uchile.cl/handle/2250/112309},&#10;}</textarea>
     </div>
   </li>
@@ -400,6 +408,11 @@
   var head4TextEn = "Email: <span class=\"tt\">escobar</span>-at-<span class=\"tt\">lix</span>-dot-<span class=\"tt\">polytechnique</span>-dot-<span class=\"tt\">fr</span>";
   var head4TextEs = "Email: <span class=\"tt\">escobar</span>-arroba-<span class=\"tt\">lix</span>-punto-<span class=\"tt\">polytechnique</span>-punto-<span class=\"tt\">fr</span>";
 
+  var copyClipEn = "Copy citation to clipboard";
+  var copyClipEs = "Copiar referencia";
+  var copyButtonEls = document.getElementsByClassName("copy-button");
+  var onClickCopyButton = "Citation&nbsp;copied!";
+  
   var head5TextEn = "Download&nbsp;CV";
   var head5TextEs = "Descarga&nbsp;CV";
 
@@ -465,6 +478,10 @@
     for (var i=0; i<h5Els.length; i++) {
       h5Els[i].innerHTML = head5TextEs;
     }
+    for (var i=0; i<copyButtonEls.length; i++) {
+      copyButtonEls[i].innerHTML = copyClipEs;
+    }
+    onClickCopyButton = "Referencia&nbsp;copiada!";
   }
   for (var i=0; i<esFlagEls.length; i++){
     esFlagEls[i].addEventListener("click", onEsFlagClick);
@@ -504,6 +521,10 @@
     for (var i=0; i<h5Els.length; i++) {
       h5Els[i].innerHTML = head5TextEn;
     }
+    for (var i=0; i<copyButtonEls.length; i++) {
+      copyButtonEls[i].innerHTML = copyClipEn;
+    }
+    onClickCopyButton = "Citation&nbsp;copied!";
   }
   for (var i=0; i<enFlagEls.length; i++){
     enFlagEls[i].addEventListener("click", onEnFlagClick);
@@ -526,7 +547,7 @@
     var el = document.getElementById(obj);
     el.select();			    
     document.execCommand("copy");
-    Tip("Citation&nbsp;copied!");			    
+    Tip(onClickCopyButton);			    
     setTimeout(UnTip, 2000);
     clearSelection();
   }
