@@ -135,13 +135,13 @@
       margin-bottom: 2px;
     }
 
-    button {
+    .copy-button {
       background-color: rgb(199,229,209);
       border: none;
       transition-duration: 0.4s;
     }
 
-    button:hover {
+    .copy-button:hover {
       background-color: white;
     }
 
@@ -205,216 +205,238 @@
       filter: blur(0px) opacity(70%);
       border: 1px solid rgb(0, 64, 22);
     }
-   
+
+    #return-to-top {
+      display: none; /* Hidden by default */
+      position: fixed; /* Fixed/sticky position */
+      bottom: 20px; /* Place the button at the bottom of the page */
+      right: 20px; /* Place the button 30px from the right */
+      z-index: 99; /* Make sure it does not overlap */
+      border: none; /* Remove borders */
+      outline: none; /* Remove outline */
+      background-color: rgba(0, 64, 22, 0.7); /* Set a background color */
+      color: white; /* Text color */
+      cursor: pointer; /* Add a mouse pointer on hover */
+      padding: 5px; /* Some padding */
+      border-radius: 35px; /* Rounded corners */
+      width: 40px; 
+      height: 40px; 
+      font-size: 18px; /* Increase font size */
+      font-weight: bold; 
+      -webkit-transition: all 0.3s linear;
+      -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+    }
+    #return-to-top:hover {
+      background-color: rgba(84, 133, 17, 0.7); /* Add a dark-grey background on hover */
+    }
    
   </style>
 </head>
 
 <body>
-<script src="js/wz_tooltip.js"></script>
-<table class="desk-head">
-<tr>
-  <td style="vertical-align:top"><img src="images/mauro2.png" alt="Mauro" style="width:310px;border:0;margin-right:15px"></td>
-  <td style="vertical-align:top"> 
-    <h1>Mauro Escobar</h1>
-    <p class="head1"></p>
-    
-    <p class="head2"></p>
-    
-    <p class="head3" style="width:95%"></p>
+  <script src="js/wz_tooltip.js"></script>
 
-    <p class="head4"></p>
-  </td>
-  <td style="vertical-align:top;text-align:right;">
-    <i class="spain flag es-flag"></i>
-    <i class="united kingdom flag en-flag"></i><br>
-    <a target="_blank" href="https://www.polytechnique.edu/en"><img src="images/logo-EP-vertical.png" style="width:100px;margin-top:20px;margin-bottom:20px;border:0;" alt="Ecole polytechnique logo"></a><br>
-    <a target="_blank" href="pdf/EscobarMauro_CV.pdf">
-      <div style="position:relative;text-align:center;">
-	<img id="cv-image" src="images/cv_small.png" alt="Download CV">
-	<div class="head5" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-weight:bold;text-shadow:2px 2px white;text-decoration:underline overline;font-size:0.9em;"></div>
-      </div>
-    </a>    
-  </td>
+  <!-- Return to Top -->
+  <button id="return-to-top" onclick="topFunction()" title="Go to top">&and;</button>  
   
-</tr>
-</table>
+  <table class="desk-head">
+    <tr>
+      <td style="vertical-align:top"><img src="images/mauro2.png" alt="Mauro" style="width:310px;border:0;margin-right:15px"></td>
+      <td style="vertical-align:top"> 
+	<h1>Mauro Escobar</h1>
+	<p class="head1"></p>
+	<p class="head2"></p>
+	<p class="head3" style="width:95%"></p>
+	<p class="head4"></p>
+      </td>
+      <td style="vertical-align:top;text-align:right;">
+	<i class="spain flag es-flag"></i>
+	<i class="united kingdom flag en-flag"></i><br>
+	<a target="_blank" href="https://www.polytechnique.edu/en"><img src="images/logo-EP-vertical.png" style="width:100px;margin-top:20px;margin-bottom:20px;border:0;" alt="Ecole polytechnique logo"></a><br>
+	<a target="_blank" href="pdf/EscobarMauro_CV.pdf">
+	  <div style="position:relative;text-align:center;">
+	    <img id="cv-image" src="images/cv_small.png" alt="Download CV">
+	    <div class="head5" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-weight:bold;text-shadow:2px 2px white;text-decoration:underline overline;font-size:0.9em;"></div>
+	  </div>
+	</a>    
+      </td>    
+    </tr>
+  </table>
+  
+  <table class="mobile-head">
+    <tr>
+      <td style="vertical-align:top;text-align:left">
+	<img src="images/mauro2.png" alt="Mauro" style="width:300px;border:0;margin-right:10px;margin-bottom:20px;"><br>
+	<a target="_blank" href="https://www.polytechnique.edu/en"><img src="images/logo-EP-horizontal.png" style="width:280px;border:0;" alt="Ecole polytechnique logo"></a>
+      </td>
+      <td style="vertical-align:top">
+	<div style="vertical-align:top;text-align:right;">
+	  <i class="spain flag es-flag"></i>
+	  <i class="united kingdom flag en-flag"></i>
+	</div>
+	<h1 style="margin-top:0px;margin-bottom:5px;">Mauro Escobar</h1>
+	<p class="head1"></p>
+	<p class="head2"></p>
+	<p class="head3"></p>
+      </td>
+    </tr>
+  </table>
+  <p class="head4 mobile-head" style="margin-top:0px;margin-bottom:5px"></p>
+  
+  <div class="link-bar desk-head">|<a content="https://orcid.org/0000-0001-8608-824X" href="https://orcid.org/0000-0001-8608-824X" target="orcid.widget" title="ORCiD">ORCiD <i class="fab fa-orcid"></i></a>|<a content="https://arxiv.org/a/escobar_m_1.html" href="https://arxiv.org/a/escobar_m_1.html" target="_blank" title="arXiv">arXiv <i class="ai ai-arxiv-square"></i></a>|<a content="https://www.researchgate.net/profile/Mauro_Escobar3" href="https://www.researchgate.net/profile/Mauro_Escobar3" target="_blank" title="ResearchGate">ResearchGate <i class="ai ai-researchgate-square"></i></a>|<a content="https://scholar.google.com/citations?user=FrSICTkAAAAJ" href="https://scholar.google.com/citations?user=FrSICTkAAAAJ" target="_blank" rel="me noopener noreferrer" title="Google Scholar">Google Scholar <i class="ai ai-google-scholar-square"></i></a>|<a content="https://www.linkedin.com/in/mauro-escobar/?locale=en_US" href="https://www.linkedin.com/in/mauro-escobar/?locale=en_US" target="_blank" rel="me noopener noreferrer" title="LinkedIn">LinkedIn <i class="fab fa-linkedin"></i></a>|<a content="https://github.com/me2533" href="https://github.com/me2533" target="_blank" title="GitHub">GitHub <i class="fab fa-github"></i></a>|</div>
+  <div class="link-bar mobile-head">|<a content="https://orcid.org/0000-0001-8608-824X" href="https://orcid.org/0000-0001-8608-824X" target="orcid.widget" title="ORCiD"> <i class="fab fa-orcid"></i> </a>|<a content="https://arxiv.org/a/escobar_m_1.html" href="https://arxiv.org/a/escobar_m_1.html" target="_blank" title="arXiv"> <i class="ai ai-arxiv-square"></i> </a>|<a content="https://www.researchgate.net/profile/Mauro_Escobar3" href="https://www.researchgate.net/profile/Mauro_Escobar3" target="_blank" title="ResearchGate"> <i class="ai ai-researchgate-square"></i> </a>|<a content="https://scholar.google.com/citations?user=FrSICTkAAAAJ" href="https://scholar.google.com/citations?user=FrSICTkAAAAJ" target="_blank" rel="me noopener noreferrer" title="Google Scholar"> <i class="ai ai-google-scholar-square"></i> </a>|<a content="https://www.linkedin.com/in/mauro-escobar/?locale=en_US" href="https://www.linkedin.com/in/mauro-escobar/?locale=en_US" target="_blank" rel="me noopener noreferrer" title="LinkedIn"> <i class="fab fa-linkedin"></i> </a>|<a content="https://github.com/me2533" href="https://github.com/me2533" target="_blank" title="GitHub"> <i class="fab fa-github"></i> </a>|</div>
 
-<table class="mobile-head">
-<tr>
-  <td style="vertical-align:top;text-align:left">
-    <img src="images/mauro2.png" alt="Mauro" style="width:300px;border:0;margin-right:10px;margin-bottom:20px;"><br>
-    <a target="_blank" href="https://www.polytechnique.edu/en"><img src="images/logo-EP-horizontal.png" style="width:280px;border:0;" alt="Ecole polytechnique logo"></a>
-    </td>
-  <td style="vertical-align:top">
-    <div style="vertical-align:top;text-align:right;">
-      <i class="spain flag es-flag"></i>
-      <i class="united kingdom flag en-flag"></i>
-    </div>
 
-    <h1 style="margin-top:0px;margin-bottom:5px;">Mauro Escobar</h1>
+  <h2><span class="en-inline">Research</span><span class="es-inline">Investigación</span></h2>
 
-    <p class="head1"></p>
+  <p class="english"> I am interested in Mathematical Optimization, in particular, Stochastic Programming, Linear Programming, Combinatorial and Discrete Optimization, Convex Optimization, and Semidefinite Programming. I also have a broad interest  Discrete Mathematics and Computational Complexity Theory.</p>
+  <p class="english"> I did my PhD thesis on defense mechanisms to detect cyber-physical attacks on Power Grids.</p>
+  <p class="spanish"> Tengo un amplio interés en la Optimización, en particular, Optimización Estocástica, Programación Lineal, Combinatorial, Optimización Discreta, Optimización Convexa y Programación Semidefinida. También tengo interés en las Matemáticas Discretas y en la Teoría de la Complejidad Computacional.</p>
+  <p class="spanish"> Durante mi doctorado, trabajé en mecanismos de defensa frente a ataques físicos y cibernéticos a redes eléctricas.</p>
 
-    <p class="head2"></p>
+  <h2><span class="en-inline">Publications</span><span class="es-inline">Publicaciones</span></h2>  
+  <ul>
+    <li>D. Bienstock, M. Escobar, C. Gentile<span class="en-inline">, and</span><span class="es-inline"> y</span> L. Liberti, <a target="_blank" href="https://doi.org/10.1007/s10288-020-00455-w"><em>Mathematical Programming formulations for the Alternating Current Optimal Power Flow problem</em></a>, <span class="en-inline">in</span><span class="es-inline">en</span> 4OR, vol. 18, no. 3, pp. 249-292, Sept. 2020.
+      <a class="pub-icon-link" target="_blank" href="https://link.springer.com/article/10.1007%2Fs10288-020-00455-w" style="text-decoration:none">
+	<i class="ai ai-springer" onmouseover="Tip('SpringerLink')" onmouseout="UnTip()"></i>
+      </a> 
+      <a class="pub-icon-link" target="_blank" href="https://doi.org/10.1007/s10288-020-00455-w" style="text-decoration:none">
+	<i class="ai ai-doi" onmouseover="Tip('doi:&nbsp;<strong>10.1007/s10288-020-00455-w</strong>')" onmouseout="UnTip()"></i>
+      </a> 
+      <a class="pub-icon-link" target="_blank" href="https://arxiv.org/abs/2007.05334" style="text-decoration:none">
+	<i class="ai ai-arxiv" onmouseover="Tip('arXiv:&nbsp;<strong>2007.05334</strong>')" onmouseout="UnTip()"></i>
+      </a> 
+      <a class="pub-icon-link" onclick="toggle('liberti2020-acopf_survey')">
+	<img class="en-inline" alt="Bibtex logo" src="images/bibtex.svg" onmouseover="Tip('toggle&nbsp;Bibtex')" onmouseout="UnTip()" style="cursor:pointer">
+	<img class="es-inline" alt="Bibtex logo" src="images/bibtex.svg" onmouseover="Tip('mostrar&nbsp;Bibtex')" onmouseout="UnTip()" style="cursor:pointer">
+      </a>
+      <div id="liberti2020-acopf_survey" class="div-bib" style="display:none"> 
+	<button class="copy-button" onclick="copyText('liberti2020-acopf_survey-text')">Copy citation to clipboard</button><br>
+	<textarea id="liberti2020-acopf_survey-text" class="ta-bib" readonly cols="130" rows="11">@article{liberti2020-acopf_survey,&#10;   author = {D.~Bienstock and M.~Escobar and C.~Gentile and L.~Liberti},&#10;   title = "{Mathematical programming formulations for the alternating current optimal power flow problem}",&#10;   journal = {4OR},&#10;   year = {2020},&#10;   volume = {18},&#10;   number = {3},&#10;   pages = {249-292},&#10;   doi = {10.1007/s10288-020-00455-w},&#10;   url = {https://link.springer.com/article/10.1007%2Fs10288-020-00455-w},&#10;}</textarea>
+      </div>
+    </li>
+    <li>D. Bienstock <span class="en-inline">and</span><span class="es-inline">y</span> M. Escobar, <a target="_blank" href="https://doi.org/10.1109/TCNS.2019.2949908"><em>Stochastic defense against complex grid attacks</em></a>, <span class="en-inline">in</span><span class="es-inline">en</span> IEEE Transactions on Control of Network Systems, vol. 7, no. 2, pp. 842-854, Jun. 2020.
+      <a class="pub-icon-link" target="_blank" href="https://ieeexplore.ieee.org/document/8886399" style="text-decoration:none">
+	<i class="ai ai-ieee" onmouseover="Tip('IEEE&nbsp;Xplore')" onmouseout="UnTip()"></i>
+      </a> 
+      <a class="pub-icon-link" target="_blank" href="https://doi.org/10.1109/TCNS.2019.2949908" style="text-decoration:none">
+	<i class="ai ai-doi" onmouseover="Tip('doi:&nbsp;<strong>10.1109/TCNS.2019.2949908</strong>')" onmouseout="UnTip()"></i>
+      </a> 
+      <a class="pub-icon-link" target="_blank" href="https://arxiv.org/abs/1807.06707" style="text-decoration:none">
+	<i class="ai ai-arxiv" onmouseover="Tip('arXiv:&nbsp;<strong>1807.06707</strong>')" onmouseout="UnTip()"></i>
+      </a> 
+      <a class="pub-icon-link" onclick="toggle('bienstock2020-stoc_attack')">
+	<img class="en-inline" alt="Bibtex logo" src="images/bibtex.svg" onmouseover="Tip('toggle&nbsp;Bibtex')" onmouseout="UnTip()" style="cursor:pointer">
+	<img class="es-inline" alt="Bibtex logo" src="images/bibtex.svg" onmouseover="Tip('mostrar&nbsp;Bibtex')" onmouseout="UnTip()" style="cursor:pointer">
+      </a>
+      <div id="bienstock2020-stoc_attack" class="div-bib" style="display:none"> 
+	<button class="copy-button" onclick="copyText('bienstock2020-stoc_attack-text')">Copy citation to clipboard</button><br>
+	<textarea id="bienstock2020-stoc_attack-text" class="ta-bib" readonly cols="130" rows="11">@article{bienstock2020-stoc_attack,&#10;   author = {D.~Bienstock and M.~Escobar},&#10;   title = "{Stochastic Defense Against Complex Grid Attacks}",&#10;   journal = {IEEE Transactions on Control of Network Systems},&#10;   year = {2020},&#10;   volume = {7},&#10;   number = {2},&#10;   pages = {842-854},&#10;   doi = {10.1109/TCNS.2019.2949908},&#10;   url = {https://ieeexplore.ieee.org/document/8886399},&#10;}</textarea>
+      </div>
+    </li>
+    <li><span class="en-inline">PhD Thesis</span><span class="es-inline">Tesis doctoral</span>: <a target="_blank" href="https://doi.org/10.7916/d8-987s-6q56"><em>Security and Statistics on Power Grids</em></a> (2019). <span class="en-inline">Advisor</span><span class="es-inline">Profesor guía</span>: Daniel Bienstock.
+      <a class="pub-icon-link" target="_blank" href="https://doi.org/10.7916/d8-987s-6q56" style="text-decoration:none">
+	<i class="ai ai-doi" onmouseover="Tip('doi:&nbsp;<strong>10.7916/d8-987s-6q56</strong>')" onmouseout="UnTip()"></i>
+      </a>
+      <a class="pub-icon-link" onclick="toggle('escobar2019-phdthesis')">
+	<img class="en-inline" alt="Bibtex logo" src="images/bibtex.svg" onmouseover="Tip('toggle&nbsp;Bibtex')" onmouseout="UnTip()" style="cursor:pointer">
+	<img class="es-inline" alt="Bibtex logo" src="images/bibtex.svg" onmouseover="Tip('mostrar&nbsp;Bibtex')" onmouseout="UnTip()" style="cursor:pointer">
+      </a>
+      <div id="escobar2019-phdthesis" class="div-bib" style="display:none"> 
+	<button class="copy-button" onclick="copyText('escobar2019-phdthesis-text')">Copy citation to clipboard</button><br>
+	<textarea id="escobar2019-phdthesis-text" class="ta-bib" readonly cols="130" rows="7">@phdthesis{escobar2019-phdthesis,&#10;   author = {M.~Escobar},&#10;   title = "{Security and Statistics on Power Grids}",&#10;   school = {Columbia University},&#10;   year = {2019},&#10;   url = {https://doi.org/10.7916/d8-987s-6q56},&#10;}</textarea>
+      </div>
+    </li>
+    <li>M. Escobar, D. Bienstock<span class="en-inline">, and</span><span class="es-inline"> y</span> M. Chertkov, <a target="_blank" href="https://ieeexplore.ieee.org/document/8810950"><em>Learning from power system data stream</em></a>, <span class="en-inline">in</span><span class="es-inline">en</span> 2019 IEEE Milan PowerTech, Jun. 2019.
+      <a class="pub-icon-link" target="_blank" href="https://ieeexplore.ieee.org/document/8810950" style="text-decoration:none">
+	<i class="ai ai-ieee" onmouseover="Tip('IEEE&nbsp;Xplore')" onmouseout="UnTip()"></i>
+      </a> 
+      <a class="pub-icon-link" target="_blank" href="https://doi.org/10.1109/PTC.2019.8810950" style="text-decoration:none">
+	<i class="ai ai-doi" onmouseover="Tip('doi:&nbsp;<strong>10.1109/PTC.2019.8810950</strong>')" onmouseout="UnTip()"></i>
+      </a>
+      <a class="pub-icon-link" target="_blank" href="https://arxiv.org/abs/1811.07139" style="text-decoration:none">
+	<i class="ai ai-arxiv" onmouseover="Tip('arXiv:&nbsp;<strong>1811.07139</strong>')" onmouseout="UnTip()"></i>
+      </a> 
+      <a class="pub-icon-link" onclick="toggle('escobar2019-data_stream')">
+	<img class="en-inline" alt="Bibtex logo" src="images/bibtex.svg" onmouseover="Tip('toggle&nbsp;Bibtex')" onmouseout="UnTip()" style="cursor:pointer">
+	<img class="es-inline" alt="Bibtex logo" src="images/bibtex.svg" onmouseover="Tip('mostrar&nbsp;Bibtex')" onmouseout="UnTip()" style="cursor:pointer">
+      </a>
+      <div id="escobar2019-data_stream" class="div-bib" style="display:none"> 
+	<button class="copy-button" onclick="copyText('escobar2019-data_stream-text')">Copy citation to clipboard</button><br>
+	<textarea id="escobar2019-data_stream-text" class="ta-bib" readonly cols="130" rows="9">@inproceedings{escobar2019-data_stream,&#10;   author = {M.~Escobar and D.~Bienstock and M.~Chertkov},&#10;   title = "{Learning from power system data stream}",&#10;   booktitle = {2019 IEEE Milan PowerTech},&#10;   year = {2019},&#10;   pages = {1-6},&#10;   doi = {10.1109/PTC.2019.8810950},&#10;   url = {https://ieeexplore.ieee.org/document/8810950},&#10;}</textarea>
+      </div>
+    </li>
+    <li>D. Bienstock <span class="en-inline">and</span><span class="es-inline">y</span> M. Escobar, <a target="_blank" href="https://dl.acm.org/citation.cfm?doid=3152042.3152077"><em>Computing Undetectable Attacks on Power Grids</em></a>, <span class="en-inline">in</span><span class="es-inline">en</span> SIGMETRICS Performance Evaluation Review, vol. 45, no. 2, Sept. 2017.
+      <a class="pub-icon-link" target="_blank" href="https://dl.acm.org/doi/10.1145/3152042.3152077" style="text-decoration:none">
+	<i class="ai ai-acm" onmouseover="Tip('ACM&nbsp;Digital&nbsp;Library')" onmouseout="UnTip()"></i>
+      </a> 
+      <a class="pub-icon-link" target="_blank" href="https://doi.org/10.1145/3152042.3152077" style="text-decoration:none">
+	<i class="ai ai-doi" onmouseover="Tip('doi:&nbsp;<strong>10.1145/3152042.3152077</strong>')" onmouseout="UnTip()"></i>
+      </a>
+      <a class="pub-icon-link" onclick="toggle('bienstock2017-computing_undetectable')">
+	<img class="en-inline" alt="Bibtex logo" src="images/bibtex.svg" onmouseover="Tip('toggle&nbsp;Bibtex')" onmouseout="UnTip()" style="cursor:pointer">
+	<img class="es-inline" alt="Bibtex logo" src="images/bibtex.svg" onmouseover="Tip('mostrar&nbsp;Bibtex')" onmouseout="UnTip()" style="cursor:pointer">
+      </a>
+      <div id="bienstock2017-computing_undetectable" class="div-bib" style="display:none"> 
+	<button class="copy-button" onclick="copyText('bienstock2017-computing_undetectable-text')">Copy citation to clipboard</button><br>
+	<textarea id="bienstock2017-computing_undetectable-text" class="ta-bib" readonly cols="130" rows="11">@article{bienstock2017-computing_undetectable,&#10;   author = {D.~Bienstock and M.~Escobar},&#10;   title = "{Computing Undetectable Attacks on Power Grids}",&#10;   publisher = {Association for Computing Machinery},&#10;   year = {2017},&#10;   volume = {45},&#10;   number = {2},&#10;   pages = {115-118},&#10;   doi = {10.1145/3152042.3152077},&#10;   url = {https://doi.org/10.1145/3152042.3152077},&#10;}</textarea>
+      </div>
+    </li>
+    <li><span class="en-inline">M.S. Thesis (in Spanish)</span><span class="es-inline">Tesis de pregrado</span>: <a target="_blank" href="http://repositorio.uchile.cl/handle/2250/112309"><em>Analysis of Network Coding Algorithms</em></a> (2012).
+      <span class="en-inline">Advisor</span><span class="es-inline">Profesor guía</span>: <a target="_blank" href="http://www.dim.uchile.cl/~mkiwi/">Marcos Kiwi</a>.
+      <a class="pub-icon-link" onclick="toggle('escobar2012-mastersthesis')">
+	<img class="en-inline" alt="Bibtex logo" src="images/bibtex.svg" onmouseover="Tip('toggle&nbsp;Bibtex')" onmouseout="UnTip()" style="cursor:pointer">
+	<img class="es-inline" alt="Bibtex logo" src="images/bibtex.svg" onmouseover="Tip('mostrar&nbsp;Bibtex')" onmouseout="UnTip()" style="cursor:pointer">
+      </a>
+      <div id="escobar2012-mastersthesis" class="div-bib" style="display:none"> 
+	<button class="copy-button" onclick="copyText('escobar2012-mastersthesis-text')">Copy citation to clipboard</button><br>
+	<textarea id="escobar2012-mastersthesis-text" class="ta-bib" readonly cols="130" rows="7">@mastersthesis{escobar2012-mastersthesis,&#10;   author = {M.~Escobar},&#10;   title = "{An\'alisis de algoritmos de codificaci\'on de redes}",&#10;   school = {Universidad de Chile - Facultad de Ciencias F\'isicas y Matem\'aticas},&#10;   year = {2012},&#10;   url = {http://repositorio.uchile.cl/handle/2250/112309},&#10;}</textarea>
+      </div>
+    </li>
+  </ul>
+  
+  <h2><span class="en-inline">Talks</span><span class="es-inline">Charlas</span></h2>  
+  <ul>
+    <li>"<em>Integer Formulation for Computing Transaction Aggregation to Detect Credit Card Fraud</em>." 
+      <a target="_blank" href="http://ctw2020.iasi.cnr.it/">CTW 2020</a>, <em>online</em>.</li>
+    <li>"<em>Learning from power system data stream</em>." 
+      <a target="_blank" href="https://attend.ieee.org/powertech-2019/">IEEE Power Tech 2019</a>, Milan, Italy.</li>
+    <li>"<em>Stochastic defense against complex grid attacks</em>." 
+      <a target="_blank" href="https://www.riskday.co.uk">Risk Day 2019</a>, Cambridge, UK.</li>
+    <li>"<em>Cyber-Physical Attacks on Power Grids and Covariance Defense</em>." 
+      <a target="_blank" href="http://meetings2.informs.org/wordpress/phoenix2018/">2018 INFORMS Annual Meeting</a>, Phoenix, AZ.</li>
+    <li>"<em>Cyber-Physical Attacks on Power Grids under the AC model and Stochastic Defense</em>." 
+      <a target="_blank" href="https://www.siam.org/conferences/cm/conference/ns18">SIAM - Network Science 2018</a>, Portland, OR.
+      <a target="_blank" href="pdf/siamns18_abstract.pdf"><i class="fas fa-file-pdf"></i> <span class="en-inline">extended abstract</span><span class="es-inline">abstract extendido</span></a></li>
+    <li>"<em>Undetectable Cyber-Physical Attacks on Power Grids under the AC model</em>." 
+      <a target="_blank" href="http://euro2018valencia.com/">EURO 2018</a>, Valencia, Spain.</li>
+    <li><em>"Machine Learning with PMU signals</em>." 
+      <a target="_blank" href="https://ismp2018.sciencesconf.org/">ISMP 2018</a>, Bordeaux, France.</li>
+    <li>"<em>Analysis on Power Grid Attacks</em>." 
+      <a target="_blank" href="http://meetings2.informs.org/wordpress/houston2017/">2017 INFORMS Annual Meeting</a>, Houston, TX.</li>
+    <li>"<em>On Routing Policies for Synchronized Queues</em>." 
+      <a target="_blank" href="http://meetings2.informs.org/wordpress/philadelphia/">2015 INFORMS Annual Meeting</a>, Philadelphia, PA. 
+      <a target="_blank" href="pdf/informs2015_presentation.pdf"><i class="fas fa-file-pdf"></i> <span class="en-inline">slides</span><span class="es-inline">diapositivas</span></a></li>
+  </ul>
+  
+  <h2><span class="en-inline">Code</span><span class="es-inline">Códigos</span></h2>  
+  <ul>
+    <li><a target="_blank" href="https://github.com/me2533/acopf">AC Optimal Power Flow solver</a>, <span class="en-inline">on</span><span class="es-inline">en</span> Github <a target="_blank" href="https://github.com/me2533/acopf"><i class="fab fa-github"></i></a>.</li>
+    <li><a target="_blank" href="https://github.com/me2533/pmu_plots">Statistical plots of PMU measurements</a>, <span class="en-inline">on</span><span class="es-inline">en</span> Github <a target="_blank" href="https://github.com/me2533/pmu_plots"><i class="fab fa-github"></i></a>.</li>
+  </ul>
+  
+  <h2><span class="en-inline">Teaching</span><span class="es-inline">Enseñanza</span></h2>  
+  <p class="english">I have been Teaching Assistant for <a target="_blank" href="https://phd.ieor.columbia.edu/content/stochastic-modeling-and-simulation">Stochastic Models</a> (B.S. and M.S. courses) at the IEOR department with professors <a target="_blank" href="http://www.columbia.edu/~ww2040/">Ward Whitt</a> (in 2014), <a target="_blank" href="http://molvera.web.unc.edu/">Mariana Olvera-Cravioto</a> (in 2016), and <a target="_blank" href="http://www.columbia.edu/~yao/">David Yao</a> (in 2015 & 2016). At LIX, I have been Teaching Coordinator for <a target="_blank" href="https://moodle.polytechnique.fr/course/info.php?name=INF569-2019">Decision theory, with applications to energy systems</a> with professors Claudia D'Ambrosio and Leo Liberti (in 2020).</p>
+  <p class="spanish">He sido Profesor Asistente del curso <a target="_blank" href="https://phd.ieor.columbia.edu/content/stochastic-modeling-and-simulation">Modelos Estocásticos</a> (cursos de pregrado y magister) en el departamento de IEOR con los profesores <a target="_blank" href="http://www.columbia.edu/~ww2040/">Ward Whitt</a> (en 2014), <a target="_blank" href="http://molvera.web.unc.edu/">Mariana Olvera-Cravioto</a> (en 2016) y <a target="_blank" href="http://www.columbia.edu/~yao/">David Yao</a> (en 2015 y 2016). En LIX, he sido profesor coordinador del curso <a target="_blank" href="https://moodle.polytechnique.fr/course/info.php?name=INF569-2019">Teoría de la decisión, con aplicaciones en sistemas de energía</a> con los profesores Claudia D'Ambrosio y Leo Liberti (en 2020).</p>
+  
+  <hr> 
+  <p><span class="en-inline">Download </span><span class="es-inline">Descargar </span><a target="_blank" href="pdf/EscobarMauro_CV.pdf"><i class="fas fa-file-pdf"></i> CV</a><span class="es-inline"> (en inglés)</span></p>
 
-    <p class="head3"></p>
-  </td>
-</tr>
-</table>
-<p class="head4 mobile-head" style="margin-top:0px;margin-bottom:5px"></p>
-
-<div class="link-bar desk-head">|<a content="https://orcid.org/0000-0001-8608-824X" href="https://orcid.org/0000-0001-8608-824X" target="orcid.widget" title="ORCiD">ORCiD <i class="fab fa-orcid"></i></a>|<a content="https://arxiv.org/a/escobar_m_1.html" href="https://arxiv.org/a/escobar_m_1.html" target="_blank" title="arXiv">arXiv <i class="ai ai-arxiv-square"></i></a>|<a content="https://www.researchgate.net/profile/Mauro_Escobar3" href="https://www.researchgate.net/profile/Mauro_Escobar3" target="_blank" title="ResearchGate">ResearchGate <i class="ai ai-researchgate-square"></i></a>|<a content="https://scholar.google.com/citations?user=FrSICTkAAAAJ" href="https://scholar.google.com/citations?user=FrSICTkAAAAJ" target="_blank" rel="me noopener noreferrer" title="Google Scholar">Google Scholar <i class="ai ai-google-scholar-square"></i></a>|<a content="https://www.linkedin.com/in/mauro-escobar/?locale=en_US" href="https://www.linkedin.com/in/mauro-escobar/?locale=en_US" target="_blank" rel="me noopener noreferrer" title="LinkedIn">LinkedIn <i class="fab fa-linkedin"></i></a>|<a content="https://github.com/me2533" href="https://github.com/me2533" target="_blank" title="GitHub">GitHub <i class="fab fa-github"></i></a>|</div>
-<div class="link-bar mobile-head">|<a content="https://orcid.org/0000-0001-8608-824X" href="https://orcid.org/0000-0001-8608-824X" target="orcid.widget" title="ORCiD"> <i class="fab fa-orcid"></i> </a>|<a content="https://arxiv.org/a/escobar_m_1.html" href="https://arxiv.org/a/escobar_m_1.html" target="_blank" title="arXiv"> <i class="ai ai-arxiv-square"></i> </a>|<a content="https://www.researchgate.net/profile/Mauro_Escobar3" href="https://www.researchgate.net/profile/Mauro_Escobar3" target="_blank" title="ResearchGate"> <i class="ai ai-researchgate-square"></i> </a>|<a content="https://scholar.google.com/citations?user=FrSICTkAAAAJ" href="https://scholar.google.com/citations?user=FrSICTkAAAAJ" target="_blank" rel="me noopener noreferrer" title="Google Scholar"> <i class="ai ai-google-scholar-square"></i> </a>|<a content="https://www.linkedin.com/in/mauro-escobar/?locale=en_US" href="https://www.linkedin.com/in/mauro-escobar/?locale=en_US" target="_blank" rel="me noopener noreferrer" title="LinkedIn"> <i class="fab fa-linkedin"></i> </a>|<a content="https://github.com/me2533" href="https://github.com/me2533" target="_blank" title="GitHub"> <i class="fab fa-github"></i> </a>|</div>
-
-
-<h2><span class="en-inline">Research</span><span class="es-inline">Investigación</span></h2>
-
-<p class="english"> I am interested in Mathematical Optimization, in particular, Stochastic Programming, Linear Programming, Combinatorial and Discrete Optimization, Convex Optimization, and Semidefinite Programming. I also have a broad interest  Discrete Mathematics and Computational Complexity Theory.</p>
-<p class="english"> I did my PhD thesis on defense mechanisms to detect cyber-physical attacks on Power Grids.</p>
-<p class="spanish"> Tengo un amplio interés en la Optimización, en particular, Optimización Estocástica, Programación Lineal, Combinatorial, Optimización Discreta, Optimización Convexa y Programación Semidefinida. También tengo interés en las Matemáticas Discretas y en la Teoría de la Complejidad Computacional.</p>
-<p class="spanish"> Durante mi doctorado, trabajé en mecanismos de defensa frente a ataques físicos y cibernéticos a redes eléctricas.</p>
-
-<h2><span class="en-inline">Publications</span><span class="es-inline">Publicaciones</span></h2>  
-<ul>
-  <li>D. Bienstock, M. Escobar, C. Gentile<span class="en-inline">, and</span><span class="es-inline"> y</span> L. Liberti, <a target="_blank" href="https://doi.org/10.1007/s10288-020-00455-w"><em>Mathematical Programming formulations for the Alternating Current Optimal Power Flow problem</em></a>, <span class="en-inline">in</span><span class="es-inline">en</span> 4OR, vol. 18, no. 3, pp. 249-292, Sept. 2020.
-    <a class="pub-icon-link" target="_blank" href="https://link.springer.com/article/10.1007%2Fs10288-020-00455-w" style="text-decoration:none">
-      <i class="ai ai-springer" onmouseover="Tip('SpringerLink')" onmouseout="UnTip()"></i>
-    </a> 
-    <a class="pub-icon-link" target="_blank" href="https://doi.org/10.1007/s10288-020-00455-w" style="text-decoration:none">
-      <i class="ai ai-doi" onmouseover="Tip('doi:&nbsp;<strong>10.1007/s10288-020-00455-w</strong>')" onmouseout="UnTip()"></i>
-    </a> 
-    <a class="pub-icon-link" target="_blank" href="https://arxiv.org/abs/2007.05334" style="text-decoration:none">
-      <i class="ai ai-arxiv" onmouseover="Tip('arXiv:&nbsp;<strong>2007.05334</strong>')" onmouseout="UnTip()"></i>
-    </a> 
-    <a class="pub-icon-link" onclick="toggle('liberti2020-acopf_survey')">
-      <img class="en-inline" alt="Bibtex logo" src="images/bibtex.svg" onmouseover="Tip('toggle&nbsp;Bibtex')" onmouseout="UnTip()" style="cursor:pointer">
-      <img class="es-inline" alt="Bibtex logo" src="images/bibtex.svg" onmouseover="Tip('mostrar&nbsp;Bibtex')" onmouseout="UnTip()" style="cursor:pointer">
-    </a>
-    <div id="liberti2020-acopf_survey" class="div-bib" style="display:none"> 
-      <button class="copy-button" onclick="copyText('liberti2020-acopf_survey-text')">Copy citation to clipboard</button><br>
-      <textarea id="liberti2020-acopf_survey-text" class="ta-bib" readonly cols="130" rows="11">@article{liberti2020-acopf_survey,&#10;   author = {D.~Bienstock and M.~Escobar and C.~Gentile and L.~Liberti},&#10;   title = "{Mathematical programming formulations for the alternating current optimal power flow problem}",&#10;   journal = {4OR},&#10;   year = {2020},&#10;   volume = {18},&#10;   number = {3},&#10;   pages = {249-292},&#10;   doi = {10.1007/s10288-020-00455-w},&#10;   url = {https://link.springer.com/article/10.1007%2Fs10288-020-00455-w},&#10;}</textarea>
-    </div>
-  </li>
-  <li>D. Bienstock <span class="en-inline">and</span><span class="es-inline">y</span> M. Escobar, <a target="_blank" href="https://doi.org/10.1109/TCNS.2019.2949908"><em>Stochastic defense against complex grid attacks</em></a>, <span class="en-inline">in</span><span class="es-inline">en</span> IEEE Transactions on Control of Network Systems, vol. 7, no. 2, pp. 842-854, Jun. 2020.
-    <a class="pub-icon-link" target="_blank" href="https://ieeexplore.ieee.org/document/8886399" style="text-decoration:none">
-      <i class="ai ai-ieee" onmouseover="Tip('IEEE&nbsp;Xplore')" onmouseout="UnTip()"></i>
-    </a> 
-    <a class="pub-icon-link" target="_blank" href="https://doi.org/10.1109/TCNS.2019.2949908" style="text-decoration:none">
-      <i class="ai ai-doi" onmouseover="Tip('doi:&nbsp;<strong>10.1109/TCNS.2019.2949908</strong>')" onmouseout="UnTip()"></i>
-    </a> 
-    <a class="pub-icon-link" target="_blank" href="https://arxiv.org/abs/1807.06707" style="text-decoration:none">
-      <i class="ai ai-arxiv" onmouseover="Tip('arXiv:&nbsp;<strong>1807.06707</strong>')" onmouseout="UnTip()"></i>
-    </a> 
-    <a class="pub-icon-link" onclick="toggle('bienstock2020-stoc_attack')">
-      <img class="en-inline" alt="Bibtex logo" src="images/bibtex.svg" onmouseover="Tip('toggle&nbsp;Bibtex')" onmouseout="UnTip()" style="cursor:pointer">
-      <img class="es-inline" alt="Bibtex logo" src="images/bibtex.svg" onmouseover="Tip('mostrar&nbsp;Bibtex')" onmouseout="UnTip()" style="cursor:pointer">
-    </a>
-    <div id="bienstock2020-stoc_attack" class="div-bib" style="display:none"> 
-      <button class="copy-button" onclick="copyText('bienstock2020-stoc_attack-text')">Copy citation to clipboard</button><br>
-      <textarea id="bienstock2020-stoc_attack-text" class="ta-bib" readonly cols="130" rows="11">@article{bienstock2020-stoc_attack,&#10;   author = {D.~Bienstock and M.~Escobar},&#10;   title = "{Stochastic Defense Against Complex Grid Attacks}",&#10;   journal = {IEEE Transactions on Control of Network Systems},&#10;   year = {2020},&#10;   volume = {7},&#10;   number = {2},&#10;   pages = {842-854},&#10;   doi = {10.1109/TCNS.2019.2949908},&#10;   url = {https://ieeexplore.ieee.org/document/8886399},&#10;}</textarea>
-    </div>
-  </li>
-  <li><span class="en-inline">PhD Thesis</span><span class="es-inline">Tesis doctoral</span>: <a target="_blank" href="https://doi.org/10.7916/d8-987s-6q56"><em>Security and Statistics on Power Grids</em></a> (2019). <span class="en-inline">Advisor</span><span class="es-inline">Profesor guía</span>: Daniel Bienstock.
-    <a class="pub-icon-link" target="_blank" href="https://doi.org/10.7916/d8-987s-6q56" style="text-decoration:none">
-      <i class="ai ai-doi" onmouseover="Tip('doi:&nbsp;<strong>10.7916/d8-987s-6q56</strong>')" onmouseout="UnTip()"></i>
-    </a>
-    <a class="pub-icon-link" onclick="toggle('escobar2019-phdthesis')">
-      <img class="en-inline" alt="Bibtex logo" src="images/bibtex.svg" onmouseover="Tip('toggle&nbsp;Bibtex')" onmouseout="UnTip()" style="cursor:pointer">
-      <img class="es-inline" alt="Bibtex logo" src="images/bibtex.svg" onmouseover="Tip('mostrar&nbsp;Bibtex')" onmouseout="UnTip()" style="cursor:pointer">
-    </a>
-    <div id="escobar2019-phdthesis" class="div-bib" style="display:none"> 
-      <button class="copy-button" onclick="copyText('escobar2019-phdthesis-text')">Copy citation to clipboard</button><br>
-      <textarea id="escobar2019-phdthesis-text" class="ta-bib" readonly cols="130" rows="7">@phdthesis{escobar2019-phdthesis,&#10;   author = {M.~Escobar},&#10;   title = "{Security and Statistics on Power Grids}",&#10;   school = {Columbia University},&#10;   year = {2019},&#10;   url = {https://doi.org/10.7916/d8-987s-6q56},&#10;}</textarea>
-    </div>
-  </li>
-  <li>M. Escobar, D. Bienstock<span class="en-inline">, and</span><span class="es-inline"> y</span> M. Chertkov, <a target="_blank" href="https://ieeexplore.ieee.org/document/8810950"><em>Learning from power system data stream</em></a>, <span class="en-inline">in</span><span class="es-inline">en</span> 2019 IEEE Milan PowerTech, Jun. 2019.
-    <a class="pub-icon-link" target="_blank" href="https://ieeexplore.ieee.org/document/8810950" style="text-decoration:none">
-      <i class="ai ai-ieee" onmouseover="Tip('IEEE&nbsp;Xplore')" onmouseout="UnTip()"></i>
-    </a> 
-    <a class="pub-icon-link" target="_blank" href="https://doi.org/10.1109/PTC.2019.8810950" style="text-decoration:none">
-      <i class="ai ai-doi" onmouseover="Tip('doi:&nbsp;<strong>10.1109/PTC.2019.8810950</strong>')" onmouseout="UnTip()"></i>
-    </a>
-    <a class="pub-icon-link" target="_blank" href="https://arxiv.org/abs/1811.07139" style="text-decoration:none">
-      <i class="ai ai-arxiv" onmouseover="Tip('arXiv:&nbsp;<strong>1811.07139</strong>')" onmouseout="UnTip()"></i>
-    </a> 
-    <a class="pub-icon-link" onclick="toggle('escobar2019-data_stream')">
-      <img class="en-inline" alt="Bibtex logo" src="images/bibtex.svg" onmouseover="Tip('toggle&nbsp;Bibtex')" onmouseout="UnTip()" style="cursor:pointer">
-      <img class="es-inline" alt="Bibtex logo" src="images/bibtex.svg" onmouseover="Tip('mostrar&nbsp;Bibtex')" onmouseout="UnTip()" style="cursor:pointer">
-    </a>
-    <div id="escobar2019-data_stream" class="div-bib" style="display:none"> 
-      <button class="copy-button" onclick="copyText('escobar2019-data_stream-text')">Copy citation to clipboard</button><br>
-      <textarea id="escobar2019-data_stream-text" class="ta-bib" readonly cols="130" rows="9">@inproceedings{escobar2019-data_stream,&#10;   author = {M.~Escobar and D.~Bienstock and M.~Chertkov},&#10;   title = "{Learning from power system data stream}",&#10;   booktitle = {2019 IEEE Milan PowerTech},&#10;   year = {2019},&#10;   pages = {1-6},&#10;   doi = {10.1109/PTC.2019.8810950},&#10;   url = {https://ieeexplore.ieee.org/document/8810950},&#10;}</textarea>
-    </div>
-  </li>
-  <li>D. Bienstock <span class="en-inline">and</span><span class="es-inline">y</span> M. Escobar, <a target="_blank" href="https://dl.acm.org/citation.cfm?doid=3152042.3152077"><em>Computing Undetectable Attacks on Power Grids</em></a>, <span class="en-inline">in</span><span class="es-inline">en</span> SIGMETRICS Performance Evaluation Review, vol. 45, no. 2, Sept. 2017.
-    <a class="pub-icon-link" target="_blank" href="https://dl.acm.org/doi/10.1145/3152042.3152077" style="text-decoration:none">
-      <i class="ai ai-acm" onmouseover="Tip('ACM&nbsp;Digital&nbsp;Library')" onmouseout="UnTip()"></i>
-    </a> 
-    <a class="pub-icon-link" target="_blank" href="https://doi.org/10.1145/3152042.3152077" style="text-decoration:none">
-      <i class="ai ai-doi" onmouseover="Tip('doi:&nbsp;<strong>10.1145/3152042.3152077</strong>')" onmouseout="UnTip()"></i>
-    </a>
-    <a class="pub-icon-link" onclick="toggle('bienstock2017-computing_undetectable')">
-      <img class="en-inline" alt="Bibtex logo" src="images/bibtex.svg" onmouseover="Tip('toggle&nbsp;Bibtex')" onmouseout="UnTip()" style="cursor:pointer">
-      <img class="es-inline" alt="Bibtex logo" src="images/bibtex.svg" onmouseover="Tip('mostrar&nbsp;Bibtex')" onmouseout="UnTip()" style="cursor:pointer">
-    </a>
-    <div id="bienstock2017-computing_undetectable" class="div-bib" style="display:none"> 
-      <button class="copy-button" onclick="copyText('bienstock2017-computing_undetectable-text')">Copy citation to clipboard</button><br>
-      <textarea id="bienstock2017-computing_undetectable-text" class="ta-bib" readonly cols="130" rows="11">@article{bienstock2017-computing_undetectable,&#10;   author = {D.~Bienstock and M.~Escobar},&#10;   title = "{Computing Undetectable Attacks on Power Grids}",&#10;   publisher = {Association for Computing Machinery},&#10;   year = {2017},&#10;   volume = {45},&#10;   number = {2},&#10;   pages = {115-118},&#10;   doi = {10.1145/3152042.3152077},&#10;   url = {https://doi.org/10.1145/3152042.3152077},&#10;}</textarea>
-    </div>
-  </li>
-  <li><span class="en-inline">M.S. Thesis (in Spanish)</span><span class="es-inline">Tesis de pregrado</span>: <a target="_blank" href="http://repositorio.uchile.cl/handle/2250/112309"><em>Analysis of Network Coding Algorithms</em></a> (2012).
-    <span class="en-inline">Advisor</span><span class="es-inline">Profesor guía</span>: <a target="_blank" href="http://www.dim.uchile.cl/~mkiwi/">Marcos Kiwi</a>.
-    <a class="pub-icon-link" onclick="toggle('escobar2012-mastersthesis')">
-      <img class="en-inline" alt="Bibtex logo" src="images/bibtex.svg" onmouseover="Tip('toggle&nbsp;Bibtex')" onmouseout="UnTip()" style="cursor:pointer">
-      <img class="es-inline" alt="Bibtex logo" src="images/bibtex.svg" onmouseover="Tip('mostrar&nbsp;Bibtex')" onmouseout="UnTip()" style="cursor:pointer">
-    </a>
-    <div id="escobar2012-mastersthesis" class="div-bib" style="display:none"> 
-      <button class="copy-button" onclick="copyText('escobar2012-mastersthesis-text')">Copy citation to clipboard</button><br>
-      <textarea id="escobar2012-mastersthesis-text" class="ta-bib" readonly cols="130" rows="7">@mastersthesis{escobar2012-mastersthesis,&#10;   author = {M.~Escobar},&#10;   title = "{An\'alisis de algoritmos de codificaci\'on de redes}",&#10;   school = {Universidad de Chile - Facultad de Ciencias F\'isicas y Matem\'aticas},&#10;   year = {2012},&#10;   url = {http://repositorio.uchile.cl/handle/2250/112309},&#10;}</textarea>
-    </div>
-  </li>
-</ul>
-
-<h2><span class="en-inline">Talks</span><span class="es-inline">Charlas</span></h2>  
-<ul>
-  <li>"<em>Integer Formulation for Computing Transaction Aggregation to Detect Credit Card Fraud</em>." 
-	  <a target="_blank" href="http://ctw2020.iasi.cnr.it/">CTW 2020</a>, <em>online</em>.</li>
-  <li>"<em>Learning from power system data stream</em>." 
-	  <a target="_blank" href="https://attend.ieee.org/powertech-2019/">IEEE Power Tech 2019</a>, Milan, Italy.</li>
-  <li>"<em>Stochastic defense against complex grid attacks</em>." 
-	  <a target="_blank" href="https://www.riskday.co.uk">Risk Day 2019</a>, Cambridge, UK.</li>
-  <li>"<em>Cyber-Physical Attacks on Power Grids and Covariance Defense</em>." 
-	  <a target="_blank" href="http://meetings2.informs.org/wordpress/phoenix2018/">2018 INFORMS Annual Meeting</a>, Phoenix, AZ.</li>
-  <li>"<em>Cyber-Physical Attacks on Power Grids under the AC model and Stochastic Defense</em>." 
-	  <a target="_blank" href="https://www.siam.org/conferences/cm/conference/ns18">SIAM - Network Science 2018</a>, Portland, OR.
-	  <a target="_blank" href="pdf/siamns18_abstract.pdf"><i class="fas fa-file-pdf"></i> <span class="en-inline">extended abstract</span><span class="es-inline">abstract extendido</span></a></li>
-  <li>"<em>Undetectable Cyber-Physical Attacks on Power Grids under the AC model</em>." 
-	  <a target="_blank" href="http://euro2018valencia.com/">EURO 2018</a>, Valencia, Spain.</li>
-  <li><em>"Machine Learning with PMU signals</em>." 
-	  <a target="_blank" href="https://ismp2018.sciencesconf.org/">ISMP 2018</a>, Bordeaux, France.</li>
-  <li>"<em>Analysis on Power Grid Attacks</em>." 
-	  <a target="_blank" href="http://meetings2.informs.org/wordpress/houston2017/">2017 INFORMS Annual Meeting</a>, Houston, TX.</li>
-  <li>"<em>On Routing Policies for Synchronized Queues</em>." 
-	  <a target="_blank" href="http://meetings2.informs.org/wordpress/philadelphia/">2015 INFORMS Annual Meeting</a>, Philadelphia, PA. 
-	  <a target="_blank" href="pdf/informs2015_presentation.pdf"><i class="fas fa-file-pdf"></i> <span class="en-inline">slides</span><span class="es-inline">diapositivas</span></a></li>
-</ul>
-
-<h2><span class="en-inline">Code</span><span class="es-inline">Códigos</span></h2>  
-<ul>
-  <li><a target="_blank" href="https://github.com/me2533/acopf">AC Optimal Power Flow solver</a>, <span class="en-inline">on</span><span class="es-inline">en</span> Github <a target="_blank" href="https://github.com/me2533/acopf"><i class="fab fa-github"></i></a>.</li>
-  <li><a target="_blank" href="https://github.com/me2533/pmu_plots">Statistical plots of PMU measurements</a>, <span class="en-inline">on</span><span class="es-inline">en</span> Github <a target="_blank" href="https://github.com/me2533/pmu_plots"><i class="fab fa-github"></i></a>.</li>
-</ul>
-
-<h2><span class="en-inline">Teaching</span><span class="es-inline">Enseñanza</span></h2>  
-<p class="english">I have been Teaching Assistant for <a target="_blank" href="https://phd.ieor.columbia.edu/content/stochastic-modeling-and-simulation">Stochastic Models</a> (B.S. and M.S. courses) at the IEOR department with professors <a target="_blank" href="http://www.columbia.edu/~ww2040/">Ward Whitt</a> (in 2014), <a target="_blank" href="http://molvera.web.unc.edu/">Mariana Olvera-Cravioto</a> (in 2016), and <a target="_blank" href="http://www.columbia.edu/~yao/">David Yao</a> (in 2015 & 2016). At LIX, I have been Teaching Coordinator for <a target="_blank" href="https://moodle.polytechnique.fr/course/info.php?name=INF569-2019">Decision theory, with applications to energy systems</a> with professors Claudia D'Ambrosio and Leo Liberti (in 2020).</p>
-<p class="spanish">He sido Profesor Asistente del curso <a target="_blank" href="https://phd.ieor.columbia.edu/content/stochastic-modeling-and-simulation">Modelos Estocásticos</a> (cursos de pregrado y magister) en el departamento de IEOR con los profesores <a target="_blank" href="http://www.columbia.edu/~ww2040/">Ward Whitt</a> (en 2014), <a target="_blank" href="http://molvera.web.unc.edu/">Mariana Olvera-Cravioto</a> (en 2016) y <a target="_blank" href="http://www.columbia.edu/~yao/">David Yao</a> (en 2015 y 2016). En LIX, he sido profesor coordinador del curso <a target="_blank" href="https://moodle.polytechnique.fr/course/info.php?name=INF569-2019">Teoría de la decisión, con aplicaciones en sistemas de energía</a> con los profesores Claudia D'Ambrosio y Leo Liberti (en 2020).</p>
-
-<hr> 
-<p><span class="en-inline">Download </span><span class="es-inline">Descargar </span><a target="_blank" href="pdf/EscobarMauro_CV.pdf"><i class="fas fa-file-pdf"></i> CV</a><span class="es-inline"> (en inglés)</span></p>
-
-<hr>
-<p><small><span class="en-inline">Last updated: November 2020</span><span class="es-inline">Última actualización: Noviembre 2020</span></small></p>
+  <hr>
+  <p><small><span class="en-inline">Last updated: November 2020</span><span class="es-inline">Última actualización: Noviembre 2020</span></small></p>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -441,7 +463,7 @@
   var copyClipEs = "Copiar referencia";
   var copyButtonEls = document.getElementsByClassName("copy-button");
   var onClickCopyButton = "Citation&nbsp;copied!";
-  
+   
   var head5TextEn = "Download&nbsp;CV";
   var head5TextEs = "Descarga&nbsp;CV";
 
@@ -472,8 +494,10 @@
   var englishEls = document.getElementsByClassName("english");
   var esInlineEls = document.getElementsByClassName("es-inline");
   var enInlineEls = document.getElementsByClassName("en-inline");
+  var scrollUpButton = document.getElementById("return-to-top");
 
   var onEsFlagClick = function() {
+    scrollUpButton.title = "Ir arriba";
     for (var i=0; i<esFlagEls.length; i++){
       esFlagEls[i].style.opacity = 1;
     }
@@ -517,6 +541,7 @@
   }
   
   var onEnFlagClick = function() {
+    scrollUpButton.title = "Go to top";
     for (var i=0; i<esFlagEls.length; i++){
       esFlagEls[i].style.opacity = 0.2;
     }
@@ -585,13 +610,21 @@
     if (window.getSelection) {window.getSelection().removeAllRanges();}
     else if (document.selection) {document.selection.empty();}
   }
- 
-  function hovergithub(el) {
-    el.innerHTML = "GitHub <img src=\"images/GitHub-Mark-32px.png\" style=\"height:1em;margin-top:2px\" alt=\"GitHub\">"
-  }
-				    
-  function unhovergithub(el) {
-    el.innerHTML = "GitHub <img src=\"images/GitHub-Mark-Light-32px.png\" style=\"height:1em;margin-top:2px;\" alt=\"GitHub\">"
+
+  // ===== Scroll to Top ==== 
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {				    
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      scrollUpButton.style.display = "block";
+    } else {
+      scrollUpButton.style.display = "none";
+    }
+  }				    
+
+  function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   }
 				    
 </script>
